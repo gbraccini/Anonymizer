@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "offset_unit": "unicode_codepoint",
+  "synthetic": true,
+  "pages": [
+    {
+      "page_id": "fixture-page",
+      "source_id": "fixture-source",
+      "index": 0,
+      "text": "😀 Elvio Veltrani; ELVIO VELTRANI; Hb 12 g/dL; non febbre.",
+      "extraction_mode": "text",
+      "regions": [],
+      "warnings": []
+    }
+  ],
+  "candidates": [
+    {
+      "page_id": "fixture-page",
+      "start": 2,
+      "end": 16,
+      "kind": "PERSON",
+      "level": 2,
+      "origin": "dictionary:synthetic_subset:CC0-1.0",
+      "id": "dca9f7d7f11d4225820764589bd28656",
+      "confidence": null,
+      "validation": {
+        "status": "unchecked",
+        "reason": "dictionary_and_context"
+      },
+      "entity_id": null
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 18,
+      "end": 32,
+      "kind": "PERSON",
+      "level": 2,
+      "origin": "dictionary:synthetic_subset:CC0-1.0",
+      "id": "4bbdf41d1abf4fafad2b699a87857428",
+      "confidence": null,
+      "validation": {
+        "status": "unchecked",
+        "reason": "dictionary_and_context"
+      },
+      "entity_id": null
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 2,
+      "end": 16,
+      "kind": "PERSON",
+      "level": 0,
+      "origin": "known:clinician",
+      "id": "2b913fbdc5b640be86bf2b1bf79bd475",
+      "confidence": null,
+      "validation": {
+        "status": "confirmed",
+        "reason": "exact_known_value"
+      },
+      "entity_id": "fixture-entity-patient"
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 8,
+      "end": 16,
+      "kind": "PERSON",
+      "level": 0,
+      "origin": "known:clinician",
+      "id": "2af07d077b9d4646b842bcfc3a8ec841",
+      "confidence": null,
+      "validation": {
+        "status": "confirmed",
+        "reason": "exact_known_value"
+      },
+      "entity_id": "fixture-entity-patient"
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 18,
+      "end": 32,
+      "kind": "PERSON",
+      "level": 0,
+      "origin": "known:clinician",
+      "id": "164340dd4b3d489196f723cde425f19d",
+      "confidence": null,
+      "validation": {
+        "status": "confirmed",
+        "reason": "exact_known_value"
+      },
+      "entity_id": "fixture-entity-patient"
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 24,
+      "end": 32,
+      "kind": "PERSON",
+      "level": 0,
+      "origin": "known:clinician",
+      "id": "714e05bdfd3a42b496cc27c699f15964",
+      "confidence": null,
+      "validation": {
+        "status": "confirmed",
+        "reason": "exact_known_value"
+      },
+      "entity_id": "fixture-entity-patient"
+    }
+  ],
+  "entities": [
+    {
+      "id": "fixture-entity-patient",
+      "role": "patient",
+      "confirmed": true,
+      "canonical_value": null,
+      "observed_variants": [
+        "Elvio Veltrani",
+        "ELVIO VELTRANI"
+      ],
+      "placeholders": [
+        "[[PAZIENTE]]"
+      ],
+      "origin": "clinician",
+      "canonical_values": [
+        [
+          "PERSON",
+          "Elvio Veltrani"
+        ]
+      ]
+    }
+  ],
+  "merged_spans": [
+    {
+      "page_id": "fixture-page",
+      "start": 2,
+      "end": 16,
+      "kind": "PERSON",
+      "candidates": [
+        {
+          "page_id": "fixture-page",
+          "start": 2,
+          "end": 16,
+          "kind": "PERSON",
+          "level": 0,
+          "origin": "known:clinician",
+          "id": "2b913fbdc5b640be86bf2b1bf79bd475",
+          "confidence": null,
+          "validation": {
+            "status": "confirmed",
+            "reason": "exact_known_value"
+          },
+          "entity_id": "fixture-entity-patient"
+        },
+        {
+          "page_id": "fixture-page",
+          "start": 2,
+          "end": 16,
+          "kind": "PERSON",
+          "level": 2,
+          "origin": "dictionary:synthetic_subset:CC0-1.0",
+          "id": "dca9f7d7f11d4225820764589bd28656",
+          "confidence": null,
+          "validation": {
+            "status": "unchecked",
+            "reason": "dictionary_and_context"
+          },
+          "entity_id": null
+        },
+        {
+          "page_id": "fixture-page",
+          "start": 8,
+          "end": 16,
+          "kind": "PERSON",
+          "level": 0,
+          "origin": "known:clinician",
+          "id": "2af07d077b9d4646b842bcfc3a8ec841",
+          "confidence": null,
+          "validation": {
+            "status": "confirmed",
+            "reason": "exact_known_value"
+          },
+          "entity_id": "fixture-entity-patient"
+        }
+      ],
+      "id": "1667f8bf026840319195caf991611803",
+      "entity_id": "fixture-entity-patient",
+      "conflicts": []
+    },
+    {
+      "page_id": "fixture-page",
+      "start": 18,
+      "end": 32,
+      "kind": "PERSON",
+      "candidates": [
+        {
+          "page_id": "fixture-page",
+          "start": 18,
+          "end": 32,
+          "kind": "PERSON",
+          "level": 0,
+          "origin": "known:clinician",
+          "id": "164340dd4b3d489196f723cde425f19d",
+          "confidence": null,
+          "validation": {
+            "status": "confirmed",
+            "reason": "exact_known_value"
+          },
+          "entity_id": "fixture-entity-patient"
+        },
+        {
+          "page_id": "fixture-page",
+          "start": 18,
+          "end": 32,
+          "kind": "PERSON",
+          "level": 2,
+          "origin": "dictionary:synthetic_subset:CC0-1.0",
+          "id": "4bbdf41d1abf4fafad2b699a87857428",
+          "confidence": null,
+          "validation": {
+            "status": "unchecked",
+            "reason": "dictionary_and_context"
+          },
+          "entity_id": null
+        },
+        {
+          "page_id": "fixture-page",
+          "start": 24,
+          "end": 32,
+          "kind": "PERSON",
+          "level": 0,
+          "origin": "known:clinician",
+          "id": "714e05bdfd3a42b496cc27c699f15964",
+          "confidence": null,
+          "validation": {
+            "status": "confirmed",
+            "reason": "exact_known_value"
+          },
+          "entity_id": "fixture-entity-patient"
+        }
+      ],
+      "id": "149fce900aff4f8dbcbde94f94c9e9d0",
+      "entity_id": "fixture-entity-patient",
+      "conflicts": []
+    }
+  ],
+  "result": {
+    "pages": [
+      {
+        "page_id": "fixture-page",
+        "text": "😀 [[PAZIENTE]]; [[PAZIENTE]]; Hb 12 g/dL; non febbre."
+      }
+    ],
+    "replacements": [
+      {
+        "id": "7dbb7336b40849a39b0ed175f31af5ba",
+        "page_id": "fixture-page",
+        "start": 2,
+        "end": 16,
+        "original": "Elvio Veltrani",
+        "replacement": "[[PAZIENTE]]",
+        "result_start": 2,
+        "result_end": 14,
+        "entity_id": "fixture-entity-patient",
+        "span_id": "1667f8bf026840319195caf991611803",
+        "reversible_token": true
+      },
+      {
+        "id": "50b306b688664b88962e39367f36d799",
+        "page_id": "fixture-page",
+        "start": 18,
+        "end": 32,
+        "original": "ELVIO VELTRANI",
+        "replacement": "[[PAZIENTE]]",
+        "result_start": 16,
+        "result_end": 28,
+        "entity_id": "fixture-entity-patient",
+        "span_id": "149fce900aff4f8dbcbde94f94c9e9d0",
+        "reversible_token": true
+      }
+    ],
+    "map": {
+      "document_id": "5a209c12ce5849c8a136b83a14fa456e",
+      "session_id": "471ba6fc1eaf48669281a481f6b38797",
+      "entities": [
+        {
+          "id": "fixture-entity-patient",
+          "role": "patient",
+          "confirmed": true,
+          "canonical_value": null,
+          "observed_variants": [
+            "Elvio Veltrani",
+            "ELVIO VELTRANI"
+          ],
+          "placeholders": [
+            "[[PAZIENTE]]"
+          ],
+          "origin": "clinician",
+          "canonical_values": [
+            [
+              "PERSON",
+              "Elvio Veltrani"
+            ]
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "token": "[[PAZIENTE]]",
+          "canonical_value": "Elvio Veltrani",
+          "entity_id": "fixture-entity-patient",
+          "replacement_ids": [
+            "7dbb7336b40849a39b0ed175f31af5ba",
+            "50b306b688664b88962e39367f36d799"
+          ],
+          "observed_values": [
+            "Elvio Veltrani",
+            "ELVIO VELTRANI"
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "id": "7dbb7336b40849a39b0ed175f31af5ba",
+          "page_id": "fixture-page",
+          "start": 2,
+          "end": 16,
+          "original": "Elvio Veltrani",
+          "replacement": "[[PAZIENTE]]",
+          "result_start": 2,
+          "result_end": 14,
+          "entity_id": "fixture-entity-patient",
+          "span_id": "1667f8bf026840319195caf991611803",
+          "reversible_token": true
+        },
+        {
+          "id": "50b306b688664b88962e39367f36d799",
+          "page_id": "fixture-page",
+          "start": 18,
+          "end": 32,
+          "original": "ELVIO VELTRANI",
+          "replacement": "[[PAZIENTE]]",
+          "result_start": 16,
+          "result_end": 28,
+          "entity_id": "fixture-entity-patient",
+          "span_id": "149fce900aff4f8dbcbde94f94c9e9d0",
+          "reversible_token": true
+        }
+      ],
+      "schema_version": 1
+    },
+    "warnings": [],
+    "schema_version": 1
+  },
+  "review_examples": [
+    {
+      "operation": "undo_mask",
+      "replacement_id": "7dbb7336b40849a39b0ed175f31af5ba",
+      "restore_observed": "Elvio Veltrani",
+      "requires_confirmation_for_level_0_1": true
+    },
+    {
+      "operation": "ocr_correction",
+      "page_id": "fixture-page",
+      "start": 2,
+      "end": 7,
+      "observed": "Elvio",
+      "corrected": "Elvio",
+      "invalidates_intersecting_spans": true,
+      "invalidates_export_confirmation": true
+    },
+    {
+      "operation": "conflicting_identity",
+      "entity_ids": [
+        "fixture-entity-patient",
+        "other-entity"
+      ],
+      "must_not_infer_patient": true,
+      "requires_review": true
+    }
+  ],
+  "timings_ms": {}
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "guard_version": "clinical_context_v6",
+  "upstreams": {
+    "eds_pseudo": {
+      "repository": "https://github.com/aphp/eds-pseudo",
+      "revision": "b8bfde4a0e6ca31ac5ea85483757294d48f19d03",
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/aphp/eds-pseudo/b8bfde4a0e6ca31ac5ea85483757294d48f19d03/LICENSE",
+          "sha256": "9abcb0ceeea71d5eed671ea0e084ac6af45a9fe3f8ba3e2775bd7830c4edcaba",
+          "bytes": 1556
+        },
+        {
+          "path": "eds_pseudo/pipes/addresses/addresses.py",
+          "url": "https://raw.githubusercontent.com/aphp/eds-pseudo/b8bfde4a0e6ca31ac5ea85483757294d48f19d03/eds_pseudo/pipes/addresses/addresses.py",
+          "sha256": "e0e1971b8cafa006c011686e5d782f10ee36f204bd20493c95241467a8d39d26",
+          "bytes": 2444
+        },
+        {
+          "path": "eds_pseudo/pipes/addresses/patterns.py",
+          "url": "https://raw.githubusercontent.com/aphp/eds-pseudo/b8bfde4a0e6ca31ac5ea85483757294d48f19d03/eds_pseudo/pipes/addresses/patterns.py",
+          "sha256": "327b490aeba260a93568f2ae798489d922b953f59617bbb717af5fbedbd5a021",
+          "bytes": 2953
+        },
+        {
+          "path": "eds_pseudo/pipes/structured.py",
+          "url": "https://raw.githubusercontent.com/aphp/eds-pseudo/b8bfde4a0e6ca31ac5ea85483757294d48f19d03/eds_pseudo/pipes/structured.py",
+          "sha256": "c4c500f9830cac2c564c73e20022c83e9a3431afcfd529688068d2c463eed87e",
+          "bytes": 3517
+        }
+      ],
+      "license": "BSD-3-Clause"
+    },
+    "openmed": {
+      "repository": "https://github.com/maziyarpanahi/openmed",
+      "revision": "29ffa70050cc7729a0051be419a1b090699a5ed1",
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/maziyarpanahi/openmed/29ffa70050cc7729a0051be419a1b090699a5ed1/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "openmed/core/pii_i18n.py",
+          "url": "https://raw.githubusercontent.com/maziyarpanahi/openmed/29ffa70050cc7729a0051be419a1b090699a5ed1/openmed/core/pii_i18n.py",
+          "sha256": "f03f4ebe2b71a37027104dd28bed007c8a8880f10019551d1348efe3e153f6e4",
+          "bytes": 462014
+        },
+        {
+          "path": "NOTICE",
+          "url": "https://raw.githubusercontent.com/maziyarpanahi/openmed/29ffa70050cc7729a0051be419a1b090699a5ed1/NOTICE",
+          "sha256": "c89b3eeffaf8456d44a38137c6787217a93cadab2c20810f4e2731ba8ae55de2",
+          "bytes": 4867
+        }
+      ],
+      "license": "Apache-2.0"
+    },
+    "medspacy": {
+      "repository": "https://github.com/medspacy/medspacy",
+      "revision": "b7bb7d82f2e8fbadc9ab26d6b4c37578f8883c2c",
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/medspacy/medspacy/b7bb7d82f2e8fbadc9ab26d6b4c37578f8883c2c/LICENSE",
+          "sha256": "80b1290359b935266e8bd343b2ed2eefc0d1996ed927811bc0972a32276c9a56",
+          "bytes": 1065
+        },
+        {
+          "path": "medspacy/postprocess/postprocessor.py",
+          "url": "https://raw.githubusercontent.com/medspacy/medspacy/b7bb7d82f2e8fbadc9ab26d6b4c37578f8883c2c/medspacy/postprocess/postprocessor.py",
+          "sha256": "a976c386d10bcca3d73d256b4a01bb603a2700fd6113d5ccaf33fcb87a1c831a",
+          "bytes": 4593
+        },
+        {
+          "path": "resources/it/context_rules.json",
+          "url": "https://raw.githubusercontent.com/medspacy/medspacy/b7bb7d82f2e8fbadc9ab26d6b4c37578f8883c2c/resources/it/context_rules.json",
+          "sha256": "29ca569041506069ae9378eb13dbb4f957e93b3be58d70176159d0efe03c4ff6",
+          "bytes": 35
+        }
+      ],
+      "license": "MIT"
+    },
+    "edspdf": {
+      "repository": "https://github.com/aphp/edspdf",
+      "revision": "7177a29534181686d035c85fa667784e7d930482",
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/aphp/edspdf/7177a29534181686d035c85fa667784e7d930482/LICENSE",
+          "sha256": "d28ed5fae54efb00c856765b1bb07b1f84555f65f7f6d349da2733b90784567e",
+          "bytes": 1485
+        },
+        {
+          "path": "edspdf/structures.py",
+          "url": "https://raw.githubusercontent.com/aphp/edspdf/7177a29534181686d035c85fa667784e7d930482/edspdf/structures.py",
+          "sha256": "5abd8257e0bd1b51387a95eda4c279e2b8ef1822bc8c19d2f1ee78e4d0000d0a",
+          "bytes": 7480
+        }
+      ],
+      "license": "BSD-3-Clause"
+    }
+  },
+  "italian_address": {
+    "street_types": [
+      "via",
+      "piazza",
+      "corso",
+      "viale",
+      "vicolo",
+      "largo",
+      "piazzale",
+      "lungomare"
+    ],
+    "context_words": [
+      "indirizzo",
+      "domicilio",
+      "residente",
+      "risiede",
+      "abitazione"
+    ],
+    "postcode_context_words": [
+      "CAP",
+      "codice postale"
+    ],
+    "source": "openmed",
+    "adaptation": "Reuse street types and context words; bounded component parser replaces greedy upstream address regex. Postcode requires explicit context or numbered street."
+  },
+  "original_openmed_patterns": {
+    "street_address": {
+      "pattern": "\\b(?:via|piazza|corso|viale|vicolo|largo|piazzale|lungomare)\\s+[A-Z\\u00c0-\\u00ff][a-z\\u00e0-\\u00ff]+(?:\\s+[A-Z\\u00c0-\\u00ff][a-z\\u00e0-\\u00ff]+)*(?:\\s*,?\\s*\\d{1,5})?\\b",
+      "context_words": [
+        "indirizzo",
+        "domicilio",
+        "residente",
+        "risiede",
+        "abitazione"
+      ]
+    },
+    "postcode": {
+      "pattern": "\\b\\d{5}\\b",
+      "context_words": [
+        "CAP",
+        "codice postale"
+      ]
+    }
+  },
+  "clinical_rules": [
+    {
+      "id": "explicit_person_field_label",
+      "pattern": "(?<![^\\r\\n])[ \\t]*(?P<value>(?i:paziente|nome[ \\t]+del[ \\t]+paziente|nominativo[ \\t]+del[ \\t]+paziente|cognome[ \\t]+(?:e[ \\t]+)?nome|nome[ \\t]+(?:e[ \\t]+)?cognome))(?=[ \\t]*[:=])",
+      "value_group": "value",
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "source": "medspacy",
+      "adaptation_type": "local_logic_adaptation",
+      "adaptation": "Local Italian postprocessing condition: explicit field label at line start, value never protected."
+    },
+    {
+      "id": "explicit_clinician_field_label",
+      "pattern": "(?<![^\\r\\n])[ \\t]*(?P<value>(?i:medico[ \\t]+(?:curante|refertante|richiedente|prescrittore|inviante|di[ \\t]+riferimento)|specialista[ \\t]+refertante|refertante|direttore[ \\t]+sanitario|radiologo))(?=[ \\t]*[:=])",
+      "value_group": "value",
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "source": "medspacy",
+      "adaptation_type": "local_logic_adaptation",
+      "adaptation": "Local Italian postprocessing condition: clinician role label, never the following name."
+    },
+    {
+      "id": "document_noun_in_narrative",
+      "pattern": "\\b(?i:lettura|interpretazione|copia|consultazione|valutazione|consegna)[ \\t]+(?i:del|dei|delle|della|dell\\x27|dell\\u2019)[ \\t]*(?P<value>(?i:referto|referti|analisi|risultati))(?![\\w\\u0300-\\u036f])",
+      "value_group": "value",
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "source": "medspacy",
+      "adaptation_type": "local_logic_adaptation",
+      "adaptation": "Local Italian modifier scope protects the document noun only; identifiers and following names remain eligible."
+    }
+  ],
+  "policy": "Sources are pinned references, not runtime dependencies. Clinical guards suppress only fully contained L3 candidates, never L0-L2. EDS-PDF layout/medspaCy postprocessing are locally implemented concepts, not imported engines. No external network at runtime."
+}

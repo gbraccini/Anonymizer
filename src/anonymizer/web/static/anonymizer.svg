@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <title>Anonymizer</title>
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="#087f77"/>
+  <path d="M164 8h32c29 0 52 23 52 52v136c0 29-23 52-52 52h-32V8Z" fill="#065b56"/>
+  <path d="M72 44h80l40 40v112c0 9-7 16-16 16H80c-9 0-16-7-16-16V60c0-9 4-16 8-16Z" fill="#fff"/>
+  <path d="M152 44v28c0 7 5 12 12 12h28l-40-40Z" fill="#a3e8d2"/>
+  <rect x="88" y="112" width="80" height="20" rx="5" fill="#087f77"/>
+  <rect x="88" y="152" width="64" height="20" rx="5" fill="#065b56"/>
+</svg>

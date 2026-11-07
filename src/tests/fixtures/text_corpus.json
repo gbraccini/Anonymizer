@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "scope": "20 synthetic text smoke samples; no recall guarantee",
+  "documents": [
+    {
+      "document_id": "fixture-document-0-0",
+      "split": "development",
+      "template_id": "header",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-0-0",
+          "source_id": "source-0-0",
+          "index": 0,
+          "text": "Clinica del Glicine\nElvio Veltrani\nCF VLTLVE80C03L219Z\nNon febbre. Hb 12.5 g/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-0-0",
+          "start": 0,
+          "end": 19,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-0-0",
+          "start": 20,
+          "end": 34,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-0-0",
+          "start": 38,
+          "end": 54,
+          "kind": "CF",
+          "observed": "VLTLVE80C03L219Z"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-0-0",
+          "start": 55,
+          "end": 65,
+          "observed": "Non febbre"
+        },
+        {
+          "page_id": "fixture-page-0-0",
+          "start": 67,
+          "end": 79,
+          "observed": "Hb 12.5 g/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-0-1",
+      "split": "development",
+      "template_id": "header",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-0-1",
+          "source_id": "source-0-1",
+          "index": 0,
+          "text": "Clinica del Glicine\nElvio Veltrani\nCF VLTLVE80C03L219Z\nNon febbre. Hb 12.5 g/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-0-1",
+          "start": 0,
+          "end": 19,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-0-1",
+          "start": 20,
+          "end": 34,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-0-1",
+          "start": 38,
+          "end": 54,
+          "kind": "CF",
+          "observed": "VLTLVE80C03L219Z"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-0-1",
+          "start": 55,
+          "end": 65,
+          "observed": "Non febbre"
+        },
+        {
+          "page_id": "fixture-page-0-1",
+          "start": 67,
+          "end": 79,
+          "observed": "Hb 12.5 g/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-1-0",
+      "split": "development",
+      "template_id": "table",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-1-0",
+          "source_id": "source-1-0",
+          "index": 0,
+          "text": "Nerina Serralvi\nEsame\tValore\tUnità\nNa\t140\tmmol/L\nK\t4.2\tmmol/L",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-1-0",
+          "start": 0,
+          "end": 15,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-1-0",
+          "start": 35,
+          "end": 48,
+          "observed": "Na\t140\tmmol/L"
+        },
+        {
+          "page_id": "fixture-page-1-0",
+          "start": 49,
+          "end": 61,
+          "observed": "K\t4.2\tmmol/L"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-1-1",
+      "split": "development",
+      "template_id": "table",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-1-1",
+          "source_id": "source-1-1",
+          "index": 0,
+          "text": "Nerina Serralvi\nEsame\tValore\tUnità\nNa\t140\tmmol/L\nK\t4.2\tmmol/L",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-1-1",
+          "start": 0,
+          "end": 15,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-1-1",
+          "start": 35,
+          "end": 48,
+          "observed": "Na\t140\tmmol/L"
+        },
+        {
+          "page_id": "fixture-page-1-1",
+          "start": 49,
+          "end": 61,
+          "observed": "K\t4.2\tmmol/L"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-2-0",
+      "split": "development",
+      "template_id": "multiple_people",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-2-0",
+          "source_id": "source-2-0",
+          "index": 0,
+          "text": "Elvio Veltrani; familiare Nerina Serralvi. Nessun dolore alla testa.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-2-0",
+          "start": 0,
+          "end": 14,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-2-0",
+          "start": 26,
+          "end": 41,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-2-0",
+          "start": 43,
+          "end": 67,
+          "observed": "Nessun dolore alla testa"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-2-1",
+      "split": "development",
+      "template_id": "multiple_people",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-2-1",
+          "source_id": "source-2-1",
+          "index": 0,
+          "text": "Elvio Veltrani; familiare Nerina Serralvi. Nessun dolore alla testa.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-2-1",
+          "start": 0,
+          "end": 14,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-2-1",
+          "start": 26,
+          "end": 41,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-2-1",
+          "start": 43,
+          "end": 67,
+          "observed": "Nessun dolore alla testa"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-3-0",
+      "split": "development",
+      "template_id": "dates",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-3-0",
+          "source_id": "source-3-0",
+          "index": 0,
+          "text": "Elvio Veltrani, nato il 3 marzo 1980. Visita 03/11/2026. Sesso M.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-3-0",
+          "start": 0,
+          "end": 14,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-3-0",
+          "start": 24,
+          "end": 36,
+          "kind": "BIRTH_DATE",
+          "observed": "3 marzo 1980"
+        },
+        {
+          "page_id": "fixture-page-3-0",
+          "start": 45,
+          "end": 55,
+          "observed": "03/11/2026",
+          "kind": "DATE"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-3-0",
+          "start": 57,
+          "end": 64,
+          "observed": "Sesso M"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-3-1",
+      "split": "development",
+      "template_id": "dates",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-3-1",
+          "source_id": "source-3-1",
+          "index": 0,
+          "text": "Elvio Veltrani, nato il 3 marzo 1980. Visita 03/11/2026. Sesso M.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-3-1",
+          "start": 0,
+          "end": 14,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        },
+        {
+          "page_id": "fixture-page-3-1",
+          "start": 24,
+          "end": 36,
+          "kind": "BIRTH_DATE",
+          "observed": "3 marzo 1980"
+        },
+        {
+          "page_id": "fixture-page-3-1",
+          "start": 45,
+          "end": 55,
+          "observed": "03/11/2026",
+          "kind": "DATE"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-3-1",
+          "start": 57,
+          "end": 64,
+          "observed": "Sesso M"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-4-0",
+      "split": "development",
+      "template_id": "contacts",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-4-0",
+          "source_id": "source-4-0",
+          "index": 0,
+          "text": "Tel: +39 012 3456789; elvio@example.invalid; CAP: 12345. Hb 12 g/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-4-0",
+          "start": 5,
+          "end": 20,
+          "kind": "PHONE",
+          "observed": "+39 012 3456789"
+        },
+        {
+          "page_id": "fixture-page-4-0",
+          "start": 22,
+          "end": 43,
+          "kind": "EMAIL",
+          "observed": "elvio@example.invalid"
+        },
+        {
+          "page_id": "fixture-page-4-0",
+          "start": 50,
+          "end": 55,
+          "kind": "POSTCODE",
+          "observed": "12345"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-4-0",
+          "start": 57,
+          "end": 67,
+          "observed": "Hb 12 g/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-4-1",
+      "split": "development",
+      "template_id": "contacts",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-4-1",
+          "source_id": "source-4-1",
+          "index": 0,
+          "text": "Tel: +39 012 3456789; elvio@example.invalid; CAP: 12345. Hb 12 g/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-4-1",
+          "start": 5,
+          "end": 20,
+          "kind": "PHONE",
+          "observed": "+39 012 3456789"
+        },
+        {
+          "page_id": "fixture-page-4-1",
+          "start": 22,
+          "end": 43,
+          "kind": "EMAIL",
+          "observed": "elvio@example.invalid"
+        },
+        {
+          "page_id": "fixture-page-4-1",
+          "start": 50,
+          "end": 55,
+          "kind": "POSTCODE",
+          "observed": "12345"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-4-1",
+          "start": 57,
+          "end": 67,
+          "observed": "Hb 12 g/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-5-0",
+      "split": "development",
+      "template_id": "doctor",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-5-0",
+          "source_id": "source-5-0",
+          "index": 0,
+          "text": "Dott. Tobia Nivori\nOspedale delle Nuvole\nReferto negativo. PA 120/80 mmHg.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-5-0",
+          "start": 6,
+          "end": 18,
+          "kind": "DOCTOR",
+          "observed": "Tobia Nivori"
+        },
+        {
+          "page_id": "fixture-page-5-0",
+          "start": 19,
+          "end": 40,
+          "kind": "FACILITY",
+          "observed": "Ospedale delle Nuvole"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-5-0",
+          "start": 41,
+          "end": 57,
+          "observed": "Referto negativo"
+        },
+        {
+          "page_id": "fixture-page-5-0",
+          "start": 59,
+          "end": 73,
+          "observed": "PA 120/80 mmHg"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-5-1",
+      "split": "development",
+      "template_id": "doctor",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-5-1",
+          "source_id": "source-5-1",
+          "index": 0,
+          "text": "Dott. Tobia Nivori\nOspedale delle Nuvole\nReferto negativo. PA 120/80 mmHg.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-5-1",
+          "start": 6,
+          "end": 18,
+          "kind": "DOCTOR",
+          "observed": "Tobia Nivori"
+        },
+        {
+          "page_id": "fixture-page-5-1",
+          "start": 19,
+          "end": 40,
+          "kind": "FACILITY",
+          "observed": "Ospedale delle Nuvole"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-5-1",
+          "start": 41,
+          "end": 57,
+          "observed": "Referto negativo"
+        },
+        {
+          "page_id": "fixture-page-5-1",
+          "start": 59,
+          "end": 73,
+          "observed": "PA 120/80 mmHg"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-6-0",
+      "split": "evaluation",
+      "template_id": "unicode",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-6-0",
+          "source_id": "source-6-0",
+          "index": 0,
+          "text": "😀 é Zelia Veltrani\nNessuna febbre; glicemia 98 mg/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-6-0",
+          "start": 5,
+          "end": 19,
+          "kind": "PERSON",
+          "observed": "Zelia Veltrani"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-6-0",
+          "start": 0,
+          "end": 4,
+          "observed": "😀 é"
+        },
+        {
+          "page_id": "fixture-page-6-0",
+          "start": 20,
+          "end": 34,
+          "observed": "Nessuna febbre"
+        },
+        {
+          "page_id": "fixture-page-6-0",
+          "start": 45,
+          "end": 53,
+          "observed": "98 mg/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-6-1",
+      "split": "evaluation",
+      "template_id": "unicode",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-6-1",
+          "source_id": "source-6-1",
+          "index": 0,
+          "text": "😀 é Zelia Veltrani\nNessuna febbre; glicemia 98 mg/dL.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-6-1",
+          "start": 5,
+          "end": 19,
+          "kind": "PERSON",
+          "observed": "Zelia Veltrani"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-6-1",
+          "start": 0,
+          "end": 4,
+          "observed": "😀 é"
+        },
+        {
+          "page_id": "fixture-page-6-1",
+          "start": 20,
+          "end": 34,
+          "observed": "Nessuna febbre"
+        },
+        {
+          "page_id": "fixture-page-6-1",
+          "start": 45,
+          "end": 53,
+          "observed": "98 mg/dL"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-7-0",
+      "split": "evaluation",
+      "template_id": "location",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-7-0",
+          "source_id": "source-7-0",
+          "index": 0,
+          "text": "Nerina Serralvi, residente a Borgo Sereno. Non allergie note.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-7-0",
+          "start": 0,
+          "end": 15,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        },
+        {
+          "page_id": "fixture-page-7-0",
+          "start": 29,
+          "end": 41,
+          "kind": "LOCATION",
+          "observed": "Borgo Sereno"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-7-0",
+          "start": 43,
+          "end": 60,
+          "observed": "Non allergie note"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-7-1",
+      "split": "evaluation",
+      "template_id": "location",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-7-1",
+          "source_id": "source-7-1",
+          "index": 0,
+          "text": "Nerina Serralvi, residente a Borgo Sereno. Non allergie note.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-7-1",
+          "start": 0,
+          "end": 15,
+          "kind": "PERSON",
+          "observed": "Nerina Serralvi"
+        },
+        {
+          "page_id": "fixture-page-7-1",
+          "start": 29,
+          "end": 41,
+          "kind": "LOCATION",
+          "observed": "Borgo Sereno"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-7-1",
+          "start": 43,
+          "end": 60,
+          "observed": "Non allergie note"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-8-0",
+      "split": "evaluation",
+      "template_id": "repeat_header",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-8-0",
+          "source_id": "source-8-0",
+          "index": 0,
+          "text": "Clinica del Glicine\nElvio Veltrani\nClinica del Glicine\nNon edema.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-8-0",
+          "start": 0,
+          "end": 19,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-8-0",
+          "start": 35,
+          "end": 54,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-8-0",
+          "start": 20,
+          "end": 34,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-8-0",
+          "start": 55,
+          "end": 64,
+          "observed": "Non edema"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-8-1",
+      "split": "evaluation",
+      "template_id": "repeat_header",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-8-1",
+          "source_id": "source-8-1",
+          "index": 0,
+          "text": "Clinica del Glicine\nElvio Veltrani\nClinica del Glicine\nNon edema.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-8-1",
+          "start": 0,
+          "end": 19,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-8-1",
+          "start": 35,
+          "end": 54,
+          "kind": "FACILITY",
+          "observed": "Clinica del Glicine"
+        },
+        {
+          "page_id": "fixture-page-8-1",
+          "start": 20,
+          "end": 34,
+          "kind": "PERSON",
+          "observed": "Elvio Veltrani"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-8-1",
+          "start": 55,
+          "end": 64,
+          "observed": "Non edema"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-9-0",
+      "split": "evaluation",
+      "template_id": "poor_reading",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-9-0",
+          "source_id": "source-9-0",
+          "index": 0,
+          "text": "VLTLVE8OC03L219A\n[lettura incerta]\nNa 140 mmol/L; non dispnea.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-9-0",
+          "start": 0,
+          "end": 16,
+          "kind": "CF",
+          "observed": "VLTLVE8OC03L219A"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-9-0",
+          "start": 35,
+          "end": 48,
+          "observed": "Na 140 mmol/L"
+        },
+        {
+          "page_id": "fixture-page-9-0",
+          "start": 50,
+          "end": 61,
+          "observed": "non dispnea"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    },
+    {
+      "document_id": "fixture-document-9-1",
+      "split": "evaluation",
+      "template_id": "poor_reading",
+      "synthetic": true,
+      "pages": [
+        {
+          "page_id": "fixture-page-9-1",
+          "source_id": "source-9-1",
+          "index": 0,
+          "text": "VLTLVE8OC03L219A\n[lettura incerta]\nNa 140 mmol/L; non dispnea.",
+          "extraction_mode": "text_fixture"
+        }
+      ],
+      "identifiers": [
+        {
+          "page_id": "fixture-page-9-1",
+          "start": 0,
+          "end": 16,
+          "kind": "CF",
+          "observed": "VLTLVE8OC03L219A"
+        }
+      ],
+      "clinical_invariants": [
+        {
+          "page_id": "fixture-page-9-1",
+          "start": 35,
+          "end": 48,
+          "observed": "Na 140 mmol/L"
+        },
+        {
+          "page_id": "fixture-page-9-1",
+          "start": 50,
+          "end": 61,
+          "observed": "non dispnea"
+        }
+      ],
+      "warnings": [
+        "synthetic_text_only",
+        "no_extraction_quality_measurement"
+      ]
+    }
+  ]
+}

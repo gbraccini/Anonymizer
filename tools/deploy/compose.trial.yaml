@@ -1,0 +1,57 @@
+# Compose della prova Docker dell'anonymizer, ormai abbandonata e conservata solo
+# come riferimento. Avvia un unico container irrigidito che espone il servizio
+# solo su localhost, raggiungibile da remoto tramite tunnel SSH.
+
+name: anonymizer-trial
+
+services:
+  anonymizer:
+    # Immagine costruita in locale dal Dockerfile, con contesto nella radice del repo.
+    image: anonymizer-trial:local
+    build:
+      context: ../..
+      dockerfile: tools/deploy/Dockerfile
+    # Rete dell'host: il servizio ascolta su 127.0.0.1 e non pubblica porte.
+    network_mode: host
+    user: "10001:10001"
+    environment:
+      ANONYMIZER_EXECUTION_LOCATION: ${ANONYMIZER_EXECUTION_LOCATION:-trial-server}
+      TMPDIR: /tmp
+    # File system in sola lettura; l'unica area scrivibile e' /tmp in memoria.
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=512m,mode=1777
+    # Modello ONNX verificato montato in sola lettura dal checkout locale.
+    volumes:
+      - type: bind
+        source: ../local/models/gliner-onnx-verified
+        target: /models/gliner
+        read_only: true
+        bind:
+          create_host_path: false
+    # Limiti di risorse.
+    cpus: 1.5
+    mem_limit: 4g
+    memswap_limit: 4g
+    pids_limit: 256
+    # Irrigidimento: niente capability, nuovi privilegi, core dump ne' log.
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    ulimits:
+      core:
+        soft: 0
+        hard: 0
+    logging:
+      driver: none
+    # Ciclo di vita e controllo di salute.
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 30s
+    healthcheck:
+      test: ["CMD", "python", "/opt/anonymizer/deploy/healthcheck.py"]
+      interval: 30s
+      timeout: 5s
+      start_period: 180s
+      retries: 3

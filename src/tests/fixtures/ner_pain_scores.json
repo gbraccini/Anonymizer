@@ -1,0 +1,6 @@
+{
+  "provenance": "authored synthetic negative clinical measurements; separate from evaluation corpus",
+  "guard_version": "clinical_context_v4",
+  "protected": ["VAS 7/10", "VAS7/10", "nrs3.5/10", "NRS: 3,5 / 10", "vas 0/10", "NRS 10/10", "VAS 10.00/10", "VAS = 9.99 /10"],
+  "not_protected": ["Clinica VAS", "VAS 11/10", "NRS -1/10", "VAS 10.1/10", "VAS 7/100", "NRS 7/10.5", "VAS 7/5", "VAS sette/10", "VAS 7/10/2026", "NRS 7 / 10 / 2026", "VAS 7/10-2026"]
+}

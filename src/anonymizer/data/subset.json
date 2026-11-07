@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "scope": "Small development subset; no claim of national or clinical coverage",
+    "source": "Manually authored synthetic fixture vocabulary",
+    "license": "CC0-1.0",
+    "external_dataset": false
+  },
+  "given_names": ["Elvio", "Nerina", "Zelia", "Tobia", "Ornella", "Livia", "Arturo"],
+  "surnames": ["Veltrani", "Serralvi", "Nivori", "Forte", "Grasso", "Testa"],
+  "locations": ["Valleverde", "Borgo Sereno", "Colle Azzurro"],
+  "facilities": ["Clinica del Glicine", "Ospedale delle Nuvole", "Ambulatorio Aurora Finta"],
+  "ambiguous_surnames": ["Forte", "Grasso", "Testa"]
+}

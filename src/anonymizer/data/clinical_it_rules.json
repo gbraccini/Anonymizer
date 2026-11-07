@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "guard_version": "clinical_context_v6",
+  "upstream": "https://github.com/BCHSI/philter-ucsf",
+  "revision": "4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a",
+  "license": "BSD-3-Clause",
+  "sources": {
+    "assessment_safe.txt": {
+      "upstream_path": "filters/regex/safe/assessment_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/assessment_safe.txt",
+      "git_blob_sha": "6f588a94654bc54b20fe3d8fc0de4df9ba4a96c0",
+      "bytes": 39,
+      "sha256": "950c11dac2cdd7c84e33d92de5ccc1661fabe06b6ad4845a7d03747af091cab7",
+      "category": "safe_clinical",
+      "selection_reason": "Clinical assessment heading/context",
+      "original_pattern": "\\b(?i)(follow\\-up|normal)\\sassessment\\b"
+    },
+    "assessment_&_plan_safe.txt": {
+      "upstream_path": "filters/regex/safe/assessment_&_plan_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/assessment_%26_plan_safe.txt",
+      "git_blob_sha": "4ee1b8845f142982c6d2cc823c23dbf62bf1b9a4",
+      "bytes": 27,
+      "sha256": "265cf80026b9c2f9b835142ef001763686f50ed4654d5d14fe885e836747fb2a",
+      "category": "safe_clinical",
+      "selection_reason": "Assessment and plan heading/context",
+      "original_pattern": "\\b(?i)assessment\\s&\\splan\\b"
+    },
+    "attending_safe.txt": {
+      "upstream_path": "filters/regex/safe/attending_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/attending_safe.txt",
+      "git_blob_sha": "5a7c90218770bc272349e17dfced1b069c26a8eb",
+      "bytes": 77,
+      "sha256": "b95596ef63b68a2a460c1d102eb48caa7904c6fa405fd83e97ffb65349b90d03",
+      "category": "safe_clinical",
+      "selection_reason": "Safe clinical use of attending",
+      "original_pattern": "\\b(?i)attending\\s([a-z]+ologist(\\was)?|physician(\\swas)?|performed(\\sthe)?)\\b"
+    },
+    "bp_safe.txt": {
+      "upstream_path": "filters/regex/safe/bp_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/bp_safe.txt",
+      "git_blob_sha": "705576ea035055e5b926ff5126aab13283d3ced7",
+      "bytes": 76,
+      "sha256": "ee6903300fd710def7bb37d3a32f27741f52ec91686b5cc9780c6700778f18b4",
+      "category": "safe_clinical",
+      "selection_reason": "Blood pressure safe contexts",
+      "original_pattern": "\\b(?i)bp(\\:)?([ ]{1,2})?([6-9][0-9]|1[0-9][0-9])\\/([2-9][0-9]|1[0-9][0-9])\\b"
+    },
+    "chief_safe.txt": {
+      "upstream_path": "filters/regex/safe/chief_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/chief_safe.txt",
+      "git_blob_sha": "5461868ad8ec9f92e8708ad21bf5ba6d60bd76a0",
+      "bytes": 26,
+      "sha256": "292366b5a1a46b917540913e626aeb0332494b56f8b819a9fd29c7a84ed7fac8",
+      "category": "safe_clinical",
+      "selection_reason": "Chief complaint heading/context",
+      "original_pattern": "\\b(?i)chief\\s(complaint)\\b"
+    },
+    "measurement_safe.txt": {
+      "upstream_path": "filters/regex/safe/measurement_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/measurement_safe.txt",
+      "git_blob_sha": "5002dcd52fbf0fe416e52b95af520c7e83c0d5cd",
+      "bytes": 100,
+      "sha256": "805a6a6e52f1bddf53dd798c470b21dce41a074ef7944551df9c88cf8d484c6c",
+      "category": "safe_clinical",
+      "selection_reason": "Measurement safe contexts",
+      "original_pattern": "\\b(?i)(?<!\\/)\\d+(\\.\\d+)?(\\-\\d+(\\.\\d+)?)?\\s((kilo)?grams|g|mg|l|ml|cup|cm|mm|mmhg|mcg|milliseconds)\\b"
+    },
+    "pain_safe.txt": {
+      "upstream_path": "filters/regex/safe/pain_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/pain_safe.txt",
+      "git_blob_sha": "2f320a65ebe9a7e075aedbf5c4592b059534a799",
+      "bytes": 77,
+      "sha256": "fb378b0007711e3b372b1e352bc40cd65cf97c436c1e36e850402b2eebc0c926",
+      "category": "safe_clinical",
+      "selection_reason": "Pain score safe contexts",
+      "original_pattern": "\\b((?i)pain[ ]{1,2}((is|was|as)( a)? )?\\d\\/10)\\b|\\b((?i)\\d\\/10[ ]{1,2}pain)\\b"
+    },
+    "units_safe.txt": {
+      "upstream_path": "filters/regex/safe/units_safe.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/safe/units_safe.txt",
+      "git_blob_sha": "7c8ea2c94dfa04c9ddde1eabf90540eb99a19106",
+      "bytes": 39,
+      "sha256": "dd189d47957080b7b2962ad3e158aaa6e2bb9d3a1b343d203f9ccf508bbf1406",
+      "category": "safe_clinical",
+      "selection_reason": "Clinical unit safe contexts",
+      "original_pattern": "\\b(?i)\\d{5,}([ ]{1,2})?(u|units|unit)\\b"
+    },
+    "attending.txt": {
+      "upstream_path": "filters/regex/salutations/attending.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/salutations/attending.txt",
+      "git_blob_sha": "427a5ec79bbba0dc25139b01e12142a8d123c126",
+      "bytes": 393,
+      "sha256": "dc777974e2359b6c5301972d135ff69330555ff3c42810a770082f436c6f0a6f",
+      "category": "sensitive_role",
+      "selection_reason": "Attending/clinician name patterns",
+      "original_pattern": "(?i)(\\b(((?<=attending\\s)|(?<=attending:\\s)|(?<=attd\\.\\s)|(?<=fellow:\\s)|(?<=fellow:[ ]{2}))(Dr\\.\\s)?((?!.*M\\.D\\.)([a-zA-Z]+(\\-[a-zA-Z]+)?(\\s[A-Z](\\.)?)?(\\,)?[ ]{1,2}[a-zA-Z]+(\\s[A-Z](\\.)?[A-Z]?)?\\b|[A-Z]\\.([A-Z]\\.)?\\s[A-Z][a-zA-Z]+))|([a-zA-Z]+(\\-[a-zA-Z]+)?(\\s[A-Z](\\.)?)?(\\,)?[ ]{1,2}[a-zA-Z]+(?=\\sM\\.D\\.)))|([a-zA-Z]+(\\-[a-zA-Z]+)?(\\s[A-Z](\\.)?)?(\\,)?[ ]{1,2}[a-zA-Z]+(?=\\/attending\\s))\\b)"
+    },
+    "confirmed_by_name.txt": {
+      "upstream_path": "filters/regex/salutations/confirmed_by_name.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/salutations/confirmed_by_name.txt",
+      "git_blob_sha": "3900018340361a00f9bdc3cc4584823f7dd52adc",
+      "bytes": 237,
+      "sha256": "12ec7f3cc7260fa5c22b696ee715e765549cb08f24e035e7ee26bb077a96531c",
+      "category": "sensitive_signature",
+      "selection_reason": "Name following confirmed-by signature text",
+      "original_pattern": "\\b((?<=(?i)confirmed\\sby\\s)|(?<=(?i)called\\sby\\s)|(?<=(?i)signed\\sby\\:\\s)|(?<=(?i)printed\\sby\\s)|(?<=(?i)copied\\sby\\s)|(?<=(?i)performed\\sby:\\s))[A-Z][a-zA-Z]+(\\s[A-Z]{1,2}(\\.)?)?(\\,)?(\\s)?[A-Z][a-zA-Z]+(\\s[A-Z]{1,2}(\\.)?)?\\b(\\s\\(\\d+\\))?"
+    },
+    "name_indicator.txt": {
+      "upstream_path": "filters/regex/salutations/name_indicator.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/salutations/name_indicator.txt",
+      "git_blob_sha": "1b6aa611f9518e312a3fb60f1c18d624c5baae16",
+      "bytes": 418,
+      "sha256": "a75f01f90dabf589b59ef849922fc1b43a4450bc08f09d28fd976726fb434969",
+      "category": "sensitive_name",
+      "selection_reason": "Name after explicit name indicators",
+      "original_pattern": "\\b((?i)((?<=(?i)\\bname:\\s)|(?<=(?i)\\bname:\\s{2})|(?<=(?i)\\bname:\\s{3})|(?<=(?i)\\bname:\\s{4})|(?<=(?i)\\bname:\\s{5})|(?<=(?i)\\bname\\s))(?!\\band medical record number\\b)(?!\\bof\\b)((?!.*MR)((O\\')?[a-zA-Z]+(\\-[a-z]+|\\s[a-zA-Z]+)?(\\,)?(\\s[A-Z]{1,2})?(\\,)?\\s[a-zA-Z]+(\\-[a-z]+)?(\\s[a-zA-Z]+)?((\\s[A-Z]){1,2})?)\\b|((O\\')?[a-zA-Z]+(\\-[a-z]+|\\s[a-zA-Z]+)?(\\,)?(\\s[A-Z]{1,2})?(\\,)?\\s[a-zA-Z]+(\\-[a-z]+)?(\\s[a-z](\\.)?)?(?=\\sMR))))"
+    },
+    "ordering_md.txt": {
+      "upstream_path": "filters/regex/salutations/ordering_md.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/salutations/ordering_md.txt",
+      "git_blob_sha": "19761fb7415c98d2cca6190260f8e0f152aea2a1",
+      "bytes": 380,
+      "sha256": "f2c72993fc17269798595b15f059dc54cf35fddadb02cc1c36e4a5baf0d85e86",
+      "category": "sensitive_role",
+      "selection_reason": "Ordering clinician/provider name patterns",
+      "original_pattern": "((?i)((?<=ordering\\smd:\\s)|(?<=referring\\smd:\\s)|(?<=reviewing\\smd:\\s)|(?<=radiologist:\\s)|(?<=reviewed\\sby:\\s)|(?<=created\\sby:\\s)|(?<=requested\\sby:\\s)|(?<=appointment\\swith\\s)))(([A-Z][a-zA-Z]+\\,(\\s)?[A-Z](\\.)?(\\/\\s[A-Z][a-zA-Z]+\\,(\\s)?[A-Z](\\.)?)?)\\b|(([A-Z]\\.\\s)?[A-Z][a-zA-Z]+(\\-[a-zA-Z]+)?(\\,)?([ ]{1,2})?[A-Z][a-zA-Z]+(\\-[A-Z][a-zA-Z]+)?([ ]{1,2}[A-Z])?)\\b((?i)\\,\\sjr\\.)?)"
+    },
+    "patient_provider.txt": {
+      "upstream_path": "filters/regex/salutations/patient_provider.txt",
+      "url": "https://raw.githubusercontent.com/BCHSI/philter-ucsf/4da3cf31c9bfbfd66c66b141c45ba7a47628dd0a/filters/regex/salutations/patient_provider.txt",
+      "git_blob_sha": "a67a5cae6a91795b1f94c6406ad7e51f45d21261",
+      "bytes": 493,
+      "sha256": "654cda156d7b5e83346f5e1c9832ecb192e13b482383f2b7bf2fc784fadfb4f6",
+      "category": "sensitive_role",
+      "selection_reason": "Patient/provider associations",
+      "original_pattern": "\\b(?!Belongings\\s[a-zA-z]+)(?!Instructions\\s[a-zA-z]+)(((?<=\\b[P|p]atient[:\\,]\\s)|(?<=\\b[P|p]atient\\s)|(?<=\\b[P|r]rovider[:\\,]\\s)|(?<=\\b[P|p]hysician\\s)|(?<=\\b[P|p]hysician\\(s\\)\\s)|(?<=\\b[P|p]hysician\\(s\\):\\s)|(?<=\\b[P|p]hysician:\\s)|(?<=\\b[R|r]esident\\s)|(?<=\\b[S|s]urgeon\\(s\\):)|(?<=\\b[S|s]urgeon\\(s\\):\\s)|(?<=\\b[R|r][E|e]:\\s))(([A-Z][a-zA-Z]+(\\,)?(\\s[A-Z]{1,2}(\\.)?)?\\s[A-Z][a-zA-Z]+(\\-[a-zA-Z]+)?(\\s[A-Z]{1,2}(\\.)?)?)|(([A-Z][a-zA-Z]+\\s([A-Z]{1,2}\\s)?)?[A-Z]{1,2}(\\.)?\\s[A-Z][a-zA-Z]+)))\\b"
+    }
+  },
+  "rules": [
+    {
+      "id": "measured_quantity",
+      "action": "safe",
+      "sources": [
+        "measurement_safe.txt"
+      ],
+      "pattern": "(?<![\\w/])\\d{1,6}(?:[.,]\\d{1,4})?(?:[ \\t]*-[ \\t]*\\d{1,6}(?:[.,]\\d{1,4})?)?[ \\t]{1,3}(?i:kg|g|mg|l|ml|cm|mm|mmhg|mcg|ms)(?:/(?i:dl|l))?(?![\\w/])",
+      "adaptation": "Adapted decimal comma, bounded numeric ranges, SI spellings and explicit concentration ratios; no standalone unit exemptions.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "measured_units",
+      "action": "safe",
+      "sources": [
+        "units_safe.txt"
+      ],
+      "pattern": "(?<![\\w/])\\d{5,8}[ \\t]{0,2}(?i:ui|unit\\u00e0)(?!\\w)",
+      "adaptation": "Translated units to Italian UI/unit?, retaining numeric requirement and bounding digits.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "blood_pressure",
+      "action": "safe",
+      "sources": [
+        "bp_safe.txt"
+      ],
+      "pattern": "\\b(?i:pa|pressione[ \\t]+arteriosa)[ \\t]*:?[ \\t]{0,2}(?:[6-9][0-9]|1[0-9]{2})[ \\t]*/[ \\t]*(?:[2-9][0-9]|1[0-9]{2})(?:[ \\t]+(?i:mmhg))?(?![\\w/]|[.,]\\d|[ \\t]*/)",
+      "adaptation": "Translated BP label to PA/pressione arteriosa; original numeric ranges retained, date continuations excluded.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "pain_measurement",
+      "action": "safe",
+      "sources": [
+        "pain_safe.txt"
+      ],
+      "pattern": "\\b(?:(?i:dolore)(?:[ \\t]+(?i:\\u00e8|era|pari[ \\t]+a))?[ \\t]*:?[ \\t]*(?:10(?:[.,]0+)?|[0-9](?:[.,][0-9]+)?)[ \\t]*/[ \\t]*10(?![\\w/]|[.,]\\d|[ \\t]*/|[ \\t]*-\\d)|(?:10(?:[.,]0+)?|[0-9](?:[.,][0-9]+)?)[ \\t]*/[ \\t]*10(?![\\w/]|[.,]\\d|[ \\t]*/|[ \\t]*-\\d)[ \\t]{1,2}(?i:dolore))",
+      "adaptation": "Translated pain, is/was/as to Italian; bounded decimal score 0..10 and date exclusions extend source safely.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "attending_role",
+      "action": "safe",
+      "sources": [
+        "attending_safe.txt"
+      ],
+      "pattern": "\\b(?i:il|del|dal|al)[ \\t]+(?P<value>medico[ \\t]+(?:curante|refertante))(?=[ \\t]+(?:ha|era|esegue|valuta|riferisce)\\b)",
+      "adaptation": "Adapted attending physician in narrative clinical role, with predicate evidence; names are outside protected group.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON"
+      ],
+      "value_group": "value",
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "assessment_plan_heading",
+      "action": "safe",
+      "sources": [
+        "assessment_&_plan_safe.txt",
+        "assessment_safe.txt"
+      ],
+      "pattern": "(?<![^\\r\\n])[ \\t]*(?i:valutazione[ \\t]+e[ \\t]+piano|valutazione[ \\t]+normale|valutazione[ \\t]+di[ \\t]+controllo)[ \\t]*:?[ \\t]*(?=\\r|\\n|\\Z)",
+      "adaptation": "Italian heading translation; stricter entire-line requirement prevents suppressing following names.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "chief_complaint_heading",
+      "action": "safe",
+      "sources": [
+        "chief_safe.txt"
+      ],
+      "pattern": "(?<![^\\r\\n])[ \\t]*(?i:motivo[ \\t]+della[ \\t]+visita|motivo[ \\t]+del[ \\t]+ricovero)[ \\t]*:?[ \\t]*(?=\\r|\\n|\\Z)",
+      "adaptation": "Chief complaint adapted to clinical Italian headings; entire line only.",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ],
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "doctor_role_label",
+      "action": "sensitive",
+      "sources": [
+        "attending.txt",
+        "ordering_md.txt"
+      ],
+      "pattern": "(?<![\\w\\u0300-\\u036f])(?i:medico[ \\t]+(?:curante|refertante|richiedente|prescrittore|inviante|di[ \\t]+riferimento)|specialista[ \\t]+refertante|radiologo)(?![\\w\\u0300-\\u036f])[ \\t]*(?::|=)?[ \\t]*(?:(?:\\r\\n|\\r|\\n)[ \\t]*)?",
+      "adaptation": "Italian role labels; fullname parsed separately with Unicode capitalization, particles and bounded one-line names.",
+      "max_newlines": 0,
+      "kind": "DOCTOR",
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "signed_by_label",
+      "action": "sensitive",
+      "sources": [
+        "confirmed_by_name.txt"
+      ],
+      "pattern": "(?<![\\w\\u0300-\\u036f])(?i:firmato(?:[ \\t]+digitalmente)?[ \\t]+da|refertato[ \\t]+da|validato[ \\t]+da)(?![\\w\\u0300-\\u036f])[ \\t]*(?::|=)?[ \\t]*(?:(?:\\r\\n|\\r|\\n)[ \\t]*)?",
+      "adaptation": "Signed/performed/confirmed by adapted to clinical signing/refertation labels; arbitrary called/copied by omitted.",
+      "max_newlines": 0,
+      "kind": "DOCTOR",
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "patient_label",
+      "action": "sensitive",
+      "sources": [
+        "patient_provider.txt",
+        "name_indicator.txt"
+      ],
+      "pattern": "(?<![\\w\\u0300-\\u036f])(?i:paziente|nome[ \\t]+del[ \\t]+paziente|nominativo[ \\t]+del[ \\t]+paziente)(?![\\w\\u0300-\\u036f])[ \\t]*[:=][ \\t]*(?:(?:\\r\\n|\\r|\\n)[ \\t]*)?",
+      "adaptation": "Patient/name labels require explicit colon/equal; no generic prose or bare name label. Fullname parser rejects grammatical state descriptions.",
+      "max_newlines": 0,
+      "kind": "PERSON",
+      "adaptation_type": "italian_adaptation"
+    },
+    {
+      "id": "refertante_label",
+      "action": "sensitive",
+      "sources": [
+        "ordering_md.txt"
+      ],
+      "pattern": "(?<![\\w\\u0300-\\u036f])(?i:refertante)[ \\t]*:[ \\t]*(?:(?:\\r\\n|\\r|\\n)[ \\t]*)?",
+      "adaptation": "Italian refertation field adapted from ordering/reviewing physician label.",
+      "adaptation_type": "italian_adaptation",
+      "max_newlines": 0,
+      "kind": "DOCTOR"
+    },
+    {
+      "id": "document_section_heading",
+      "action": "safe",
+      "sources": [
+        "assessment_&_plan_safe.txt",
+        "chief_safe.txt"
+      ],
+      "pattern": "(?<![^\\r\\n])[ \\t]*(?i:analisi|referto|risultati|conclusioni)[ \\t]*:?[ \\t]*(?=\\r|\\n|\\Z)",
+      "adaptation": "LOCAL EXTENSION of entire-line heading criterion to Italian document sections; these words are not literal translations of upstream headings.",
+      "adaptation_type": "local_extension",
+      "max_newlines": 0,
+      "ner_kinds": [
+        "PERSON",
+        "LOCATION",
+        "FACILITY"
+      ]
+    }
+  ],
+  "policy": "Safe intervals affect only fully contained NER L3 candidates of listed kinds. They never override L0-L2 or KnownIdentity. No US age/date rules or whole Philter engine."
+}

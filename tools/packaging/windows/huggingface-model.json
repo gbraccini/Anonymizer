@@ -1,0 +1,42 @@
+{
+  "format": "anonymizer-model-onnx-v1",
+  "url": "https://huggingface.co/onnx-community/gliner_multi-v2.1/resolve/6ddaeb9413b0e71ad8457da1aab378a165b24058/onnx/model.onnx",
+  "size": 1157129714,
+  "sha256": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0",
+  "files": {
+    "model.onnx": {
+      "size": 1157129714,
+      "sha256": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0"
+    },
+    "gliner_config.json": {
+      "size": 2835,
+      "sha256": "fe979fd98743e2348f923dbd8ed3c24ca6d007eeb89871056bbb422d92f9afbf"
+    },
+    "tokenizer.json": {
+      "size": 16034669,
+      "sha256": "506beabd886b40a1fe008af4ea41be28e5a723410e5bc6ccc18850b1fea61bad"
+    },
+    "tokenizer_config.json": {
+      "size": 3052,
+      "sha256": "cdd3ebb03ab7e6e453fd463e25958c01614699d184d0db7188432e2254c82484"
+    },
+    "anonymizer_model.json": {
+      "size": 627,
+      "sha256": "0ada9846819e36300350fe686f0b130b5eec2dda57c5d51e6681cbf67a07c0bd"
+    }
+  },
+  "ledger": {
+    "model_id": "onnx-community/gliner_multi-v2.1",
+    "revision": "6ddaeb9413b0e71ad8457da1aab378a165b24058",
+    "license": "apache-2.0",
+    "runtime": "onnx",
+    "precision": "fp32",
+    "source_model": "urchade/gliner_multi-v2.1",
+    "files": {
+      "model.onnx": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0",
+      "gliner_config.json": "fe979fd98743e2348f923dbd8ed3c24ca6d007eeb89871056bbb422d92f9afbf",
+      "tokenizer.json": "506beabd886b40a1fe008af4ea41be28e5a723410e5bc6ccc18850b1fea61bad",
+      "tokenizer_config.json": "cdd3ebb03ab7e6e453fd463e25958c01614699d184d0db7188432e2254c82484"
+    }
+  }
+}

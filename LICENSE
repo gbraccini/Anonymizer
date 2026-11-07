@@ -1,0 +1,199 @@
+LICENZA D'USO PERSONALE DI ANONYMIZER
+Versione 1.0 - 7 novembre 2026
+
+Copyright (C) 2026 Gianluca Braccini. Tutti i diritti riservati.
+
+IN SINTESI - USO ESCLUSIVAMENTE PERSONALE
+Anonymizer è concesso gratuitamente solo a persone fisiche, per scopi
+privati, sui propri documenti o su quelli dei familiari. Non possono usarlo
+aziende, professionisti, medici e operatori sanitari nella loro attività
+professionale, strutture sanitarie, pubbliche amministrazioni ed enti di
+qualsiasi tipo. Il programma è un prototipo fornito così com'è, senza
+supporto né garanzie: il risultato va sempre verificato, l'anonimato non è
+garantito e non è un dispositivo medico. La sintesi non
+sostituisce il testo completo della licenza riportato sotto.
+
+English summary (for convenience only, the Italian text below prevails):
+Anonymizer is source-available, not open source. Natural persons may use it
+free of charge only for private purposes, on documents concerning themselves
+or their family. Any use by or on behalf of companies, professionals,
+physicians and other healthcare practitioners in their professional activity,
+public administrations and any other organisation is prohibited without a
+separate written licence from the copyright holder.
+
+
+1. TITOLARE E NATURA DELLA LICENZA
+
+1.1. Anonymizer (il "Software") è opera di Gianluca Braccini (il "Titolare"),
+     che ne detiene in via esclusiva tutti i diritti di proprietà
+     intellettuale. Il Software comprende codice sorgente, codice compilato,
+     eseguibili, installatori, interfaccia grafica, documentazione, dati,
+     regole di rilevamento e ogni versione modificata o derivata.
+
+1.2. Il Software è concesso in licenza, non venduto né ceduto. Nessun diritto
+     è trasferito al di fuori di quelli espressamente indicati in questa
+     licenza. Tutti i diritti non concessi espressamente restano riservati al
+     Titolare.
+
+1.3. Questa licenza non è una licenza "open source" o di "software libero".
+     La pubblicazione del codice sorgente ha finalità di trasparenza e di
+     studio e non comporta alcuna rinuncia ai diritti del Titolare.
+
+
+2. DEFINIZIONI
+
+2.1. "Licenziatario": la persona fisica maggiorenne che usa il Software
+     accettando questa licenza, esclusivamente a titolo personale.
+
+2.2. "Uso Personale": l'uso del Software da parte del Licenziatario per
+     finalità esclusivamente private e non connesse, neppure indirettamente,
+     ad attività lavorative, professionali, commerciali, imprenditoriali,
+     istituzionali, associative o di servizio verso terzi, su documenti che
+     riguardano il Licenziatario stesso o i suoi familiari e conviventi, con
+     il loro consenso quando necessario.
+
+2.3. "Uso Professionale": qualsiasi uso diverso dall'Uso Personale, e in
+     particolare ogni uso indicato all'articolo 4.
+
+
+3. DIRITTI CONCESSI
+
+3.1. Alle condizioni di questa licenza, il Titolare concede al Licenziatario
+     un diritto gratuito, non esclusivo, non trasferibile, non
+     sublicenziabile e revocabile ai sensi dell'articolo 9, di:
+     a) scaricare, installare ed eseguire il Software per Uso Personale;
+     b) studiare il codice sorgente e modificarlo per il proprio Uso
+        Personale;
+     c) distribuire gratuitamente a terze persone fisiche copie integrali e
+        non modificate del Software, solo per il loro Uso Personale e
+        insieme a questa licenza e a tutti gli avvisi di copyright.
+
+3.2. La distribuzione di versioni modificate o derivate del Software, in
+     qualsiasi forma, richiede il previo consenso scritto del Titolare.
+
+
+4. USI VIETATI
+
+4.1. Senza una licenza scritta separata rilasciata dal Titolare, è vietato
+     l'uso del Software, diretto o indiretto, anche gratuito, anche di prova
+     e anche limitato a parti del Software:
+     a) da parte o per conto di imprese, società, ditte individuali,
+        consorzi, gruppi e ogni altro soggetto che svolga attività economica,
+        comprese le imprese che operano in ambito sanitario,
+        sociosanitario, assicurativo, informatico o di consulenza;
+     b) da parte di professionisti e lavoratori autonomi nell'esercizio
+        della propria attività, iscritti o meno ad albi o ordini;
+     c) da parte di medici, odontoiatri, farmacisti, psicologi, infermieri e
+        di ogni altro esercente una professione sanitaria o sociosanitaria
+        nell'ambito della propria attività professionale, in qualsiasi forma
+        esercitata: libera professione, rapporto di lavoro dipendente,
+        convenzione con il Servizio Sanitario Nazionale, medicina generale,
+        pediatria di libera scelta, attività intramoenia, sostituzioni o
+        guardie;
+     d) da parte di pubbliche amministrazioni, aziende sanitarie, aziende
+        ospedaliere, ospedali e strutture sanitarie pubbliche o private,
+        enti pubblici economici e non economici, società a partecipazione
+        pubblica, istituti di ricovero e cura, università, scuole ed enti di
+        ricerca;
+     e) da parte di associazioni, fondazioni, cooperative, enti del terzo
+        settore e ogni altra organizzazione, anche senza scopo di lucro;
+     f) da parte di dipendenti, collaboratori o incaricati dei soggetti
+        indicati nelle lettere precedenti, quando agiscono per conto di
+        questi o nell'ambito del loro rapporto con essi.
+
+4.2. È inoltre vietato in ogni caso:
+     a) trattare con il Software documenti o dati di pazienti, clienti,
+        assistiti o altri terzi diversi da quelli previsti dall'articolo 2.2;
+     b) vendere, noleggiare, concedere in licenza o sublicenza, prestare a
+        pagamento o mettere a disposizione il Software come servizio, anche
+        in rete o in cloud;
+     c) integrare il Software o parti di esso in altri prodotti, servizi o
+        sistemi;
+     d) usare il Software, i suoi risultati o il suo codice per addestrare,
+        valutare o sviluppare prodotti o servizi destinati a usi diversi
+        dall'Uso Personale;
+     e) rimuovere o alterare gli avvisi di copyright, di licenza o di
+        esclusione di responsabilità.
+
+4.3. Chi desidera un Uso Professionale o qualsiasi uso escluso da questa
+     licenza può chiedere al Titolare una licenza separata, scrivendo a
+     gianluca.braccini@gmail.com. Il Titolare è libero di concederla o
+     negarla e di stabilirne le condizioni.
+
+
+5. COMPONENTI DI TERZE PARTI
+
+5.1. Il Software usa librerie, modelli, regole e risorse di terze parti, che
+     restano soggetti alle rispettive licenze, incluse nel Software o nella
+     sua distribuzione. Questa licenza non limita i diritti che quelle
+     licenze concedono sui rispettivi componenti, e non concede diritti
+     ulteriori sui componenti stessi.
+
+
+6. CONTRIBUTI
+
+6.1. Chi invia al Titolare modifiche, correzioni, segnalazioni o altri
+     contributi al Software dichiara di averne il diritto e concede al
+     Titolare un diritto gratuito, perpetuo, irrevocabile, mondiale e
+     sublicenziabile di usarli, modificarli, distribuirli e concederli in
+     licenza a qualsiasi titolo, anche con licenze diverse da questa. Il
+     Titolare non è tenuto ad accettare alcun contributo.
+
+
+7. NATURA DEL SOFTWARE ED ESCLUSIONE DI GARANZIA
+
+7.1. Il Software è uno studio di fattibilità. Non è un dispositivo medico e
+     non è destinato a diagnosi, cura o decisioni cliniche.
+
+7.2. L'oscuramento e la pseudonimizzazione proposti dal Software possono
+     essere incompleti o errati. Il risultato richiede sempre una revisione
+     umana attenta e non garantisce l'anonimato dei documenti. Il
+     Licenziatario resta l'unico responsabile della verifica dei documenti
+     prodotti e del loro eventuale invio o condivisione.
+
+7.3. Nei limiti massimi consentiti dalla legge, il Software è fornito "così
+     com'è", senza garanzie di alcun tipo, espresse o implicite, comprese
+     quelle di funzionamento, accuratezza, idoneità a uno scopo particolare
+     e assenza di violazioni di diritti di terzi.
+
+7.4. Il Software è un prototipo non pronto per un uso professionale. Il
+     Titolare non è tenuto a fornire assistenza, supporto, manutenzione,
+     correzioni o aggiornamenti, né a garantire la disponibilità futura del
+     Software o del modello scaricato al primo avvio.
+
+
+8. LIMITAZIONE DI RESPONSABILITÀ
+
+8.1. Nei limiti massimi consentiti dalla legge, il Titolare non risponde di
+     alcun danno, diretto o indiretto, derivante dall'uso o dall'impossibilità
+     di usare il Software, compresi la diffusione di dati personali, la
+     perdita di dati e i danni a terzi. Resta ferma la responsabilità per
+     dolo o colpa grave nei casi in cui la legge non consente di escluderla.
+
+
+9. CESSAZIONE
+
+9.1. La licenza cessa automaticamente, senza necessità di comunicazione, in
+     caso di violazione di una qualsiasi delle sue condizioni. In tal caso il
+     Licenziatario deve cessare ogni uso del Software e distruggerne tutte le
+     copie in suo possesso.
+
+9.2. Il Titolare si riserva tutti i rimedi previsti dalla legge a tutela dei
+     propri diritti, compresa la richiesta di risarcimento del danno.
+
+
+10. LEGGE APPLICABILE E FORO
+
+10.1. Questa licenza è regolata dalla legge italiana.
+
+10.2. Fatti salvi i diritti inderogabili riconosciuti ai consumatori, per
+      ogni controversia è competente in via esclusiva il foro del luogo di
+      residenza del Titolare.
+
+10.3. Se una clausola di questa licenza risulta invalida o inefficace, le
+      altre restano valide.
+
+10.4. Il Titolare può pubblicare nuove versioni di questa licenza. Ogni copia
+      del Software resta regolata dalla versione della licenza con cui è
+      stata distribuita, salvo che il Licenziatario scelga di applicare una
+      versione successiva.

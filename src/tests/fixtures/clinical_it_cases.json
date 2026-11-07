@@ -1,0 +1,134 @@
+{
+  "safe": [
+    {
+      "text": "Emoglobina 12,5 g/dL",
+      "target": "12,5 g/dL"
+    },
+    {
+      "text": "Dose 2-4 mg",
+      "target": "2-4 mg"
+    },
+    {
+      "text": "Somministrare 50000 UI",
+      "target": "50000 UI"
+    },
+    {
+      "text": "PA: 120/80 mmHg",
+      "target": "120/80"
+    },
+    {
+      "text": "pressione arteriosa 160 / 90",
+      "target": "160 / 90"
+    },
+    {
+      "text": "dolore: 3,5/10",
+      "target": "3,5/10"
+    },
+    {
+      "text": "4/10 dolore",
+      "target": "4/10 dolore"
+    },
+    {
+      "text": "Valutazione e piano",
+      "target": "Valutazione e piano"
+    },
+    {
+      "text": "Motivo della visita:",
+      "target": "Motivo della visita"
+    },
+    {
+      "text": "RISULTATI",
+      "target": "RISULTATI"
+    },
+    {
+      "text": "Il medico refertante ha valutato il campione.",
+      "target": "medico refertante"
+    }
+  ],
+  "not_safe": [
+    {
+      "text": "mg",
+      "target": "mg"
+    },
+    {
+      "text": "PA 120/80/2026",
+      "target": "120/80"
+    },
+    {
+      "text": "dolore 3/10/2026",
+      "target": "3/10"
+    },
+    {
+      "text": "dolore 11/10",
+      "target": "11/10"
+    },
+    {
+      "text": "Referto di Mario Valenti",
+      "target": "Mario Valenti"
+    },
+    {
+      "text": "Risultati del paziente Mario Valenti",
+      "target": "Mario Valenti"
+    },
+    {
+      "text": "Medico curante Mario Valenti",
+      "target": "Medico curante Mario Valenti"
+    },
+    {
+      "text": "Paziente: Lucia De Santis",
+      "target": "Lucia De Santis"
+    },
+    {
+      "text": "Motivo della visita: Mario Valenti",
+      "target": "Mario Valenti"
+    }
+  ],
+  "sensitive": [
+    {
+      "text": "Medico curante Marco Paoli",
+      "target": "Marco Paoli",
+      "kind": "DOCTOR"
+    },
+    {
+      "text": "Refertante: Giada Monteluna",
+      "target": "Giada Monteluna",
+      "kind": "DOCTOR"
+    },
+    {
+      "text": "Firmato digitalmente da:\nELENA VITALI",
+      "target": "ELENA VITALI",
+      "kind": "DOCTOR"
+    },
+    {
+      "text": "Medico di riferimento: Zoë van Astravelli",
+      "target": "Zoë van Astravelli",
+      "kind": "DOCTOR"
+    },
+    {
+      "text": "Paziente: Lucia De Santis Data 03-04-2026",
+      "target": "Lucia De Santis",
+      "kind": "PERSON"
+    },
+    {
+      "text": "Nome del paziente: Élodie D’Ávori",
+      "target": "Élodie D’Ávori",
+      "kind": "PERSON"
+    },
+    {
+      "text": "Paziente: Elena da Monteluna",
+      "target": "Elena da Monteluna",
+      "kind": "PERSON"
+    }
+  ],
+  "not_sensitive": [
+    "PAZIENTE: IN BUONE CONDIZIONI",
+    "Paziente: Nome Cognome",
+    "Medico curante di riferimento",
+    "Firmato da:\n\nMarco Paoli",
+    "Paziente in buone condizioni",
+    "Medico curante ha valutato il paziente",
+    "Paziente: CON DOLORE DIFFUSO",
+    "Paziente: SENZA FEBBRE",
+    "Refertante: ..."
+  ]
+}

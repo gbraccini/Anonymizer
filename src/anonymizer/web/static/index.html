@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anonymizer · Revisione documenti</title>
+  <link rel="icon" type="image/svg+xml" href="/static/anonymizer.svg">
+  <link rel="alternate icon" href="/static/anonymizer.ico">
+  <link rel="preload" href="/static/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="/static/style.css" rel="stylesheet">
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 16v4h16v-4"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h5"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-click" viewBox="0 0 24 24"><path d="m5 3 14 10-7 1-3 7-4-18Z"/></symbol>
+    <symbol id="icon-draw" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke-dasharray="3 3"/><path d="M9 12h6m-3-3v6"/></symbol>
+    <symbol id="icon-pan" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M9 6l3-3 3 3m-6 12 3 3 3-3M6 9l-3 3 3 3m12-6 3 3-3 3"/></symbol>
+    <symbol id="icon-undo" viewBox="0 0 24 24"><path d="m8 4-5 5 5 5M3 9h10a7 7 0 0 1 0 14" transform="translate(0 -2)"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v13m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+  </defs></svg>
+  <header class="app-header">
+    <a class="brand" href="/" aria-label="Anonymizer, pagina iniziale"><img class="brand-mark" src="/static/anonymizer.svg" width="33" height="33" alt=""> Anonymizer</a>
+    <span id="executionBadge" class="local-badge">Elaborazione documenti</span>
+    <button id="clear" class="quiet"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>Nuovo documento</button>
+  </header>
+  <nav class="workflow" aria-label="Avanzamento del documento">
+    <ol>
+      <li id="stepUpload" aria-current="step"><span class="step-number">1</span><span>Carica<span class="step-detail"> i documenti</span></span></li>
+      <li id="stepReview"><span class="step-number">2</span><span>Controlla<span class="step-detail"> le oscurazioni</span></span></li>
+      <li id="stepExport"><span class="step-number">3</span><span>Esporta<span class="step-detail"> la copia</span></span></li>
+    </ol>
+  </nav>
+  <main>
+    <section id="landing" class="landing">
+      <div class="landing-copy">
+        <p class="eyebrow">LA CURA RESTA AL CENTRO · <span id="appVersion">Versione {{APP_VERSION}}</span></p>
+        <h1 class="hero-title">Condividi il documento.<br><span>Proteggi i dati personali.</span></h1>
+        <p class="intro">Individua i dati personali, controlla le oscurazioni e prepara una copia da condividere, preservando il contenuto clinico.</p>
+        <div class="review-promise"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><strong>L’ultima parola è tua.</strong><p>Verifica il risultato e scegli cosa oscurare prima di esportare.</p></div></div>
+        <p id="licenseNotice" class="license-notice" role="note"><strong>Uso esclusivamente personale.</strong> Anonymizer è concesso gratuitamente solo a persone fisiche, per i propri documenti o per quelli dei familiari. Non possono usarlo aziende, professionisti, medici e operatori sanitari nella loro attività, strutture sanitarie ed enti pubblici.</p>
+      </div>
+      <div class="upload-card">
+        <div class="card-heading"><span class="eyebrow">INIZIA DA QUI</span><h2>Carica i documenti</h2><p>Puoi aggiungere uno o più file.</p></div>
+        <label id="dropzone" class="dropzone" tabindex="0" role="button" for="files">
+          <span class="upload-icon" aria-hidden="true"><svg class="icon"><use href="#icon-upload"/></svg></span><strong>Trascina qui i documenti</strong><span>oppure <span class="file-picker-link">seleziona dal computer</span></span><small>PDF, JPEG, PNG, HEIC · fino a 50 MB complessivi</small>
+        </label>
+        <input id="files" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.heic,.heif" class="visually-hidden">
+        <ul id="fileList" class="file-list" aria-label="Documenti selezionati"></ul>
+        <button id="analyze" class="primary large">Analizza i documenti <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        <p class="fine-print">Seleziona i file, poi avvia l’analisi. DICOM escluso.</p>
+      </div>
+      <div class="trust-strip"><div><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><span id="executionEyebrow">Elaborazione documenti</span></div><div><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><span>Gli originali restano invariati</span></div><div><svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg><span>Nessuna archiviazione automatica</span></div></div>
+    </section>
+    <p id="message" class="status" aria-live="polite" role="status"></p>
+    <section id="workspace" hidden>
+      <div class="workspace-heading"><div><p class="eyebrow">REVISIONE DEL DOCUMENTO</p><h1>Controlla le oscurazioni</h1></div><span id="reviewProgress" class="review-progress"></span></div>
+      <div class="review-toolbar">
+        <div class="toolbar-group tools" role="group" aria-label="Strumento di revisione"><button id="toolClick" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#icon-click"/></svg>Clic</button><button id="toolDraw" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-draw"/></svg>Disegna</button><button id="toolPan" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-pan"/></svg>Sposta</button></div>
+        <div class="toolbar-group"><button id="undo" class="quiet" aria-label="Annulla ultima modifica"><svg class="icon" aria-hidden="true"><use href="#icon-undo"/></svg>Annulla</button><button id="redo" class="quiet" aria-label="Ripristina modifica"><svg class="icon icon-flip" aria-hidden="true"><use href="#icon-undo"/></svg>Ripristina</button></div>
+        <div class="toolbar-group zoom-label" role="group" aria-label="Zoom condiviso"><button id="zoomOut" aria-label="Riduci zoom">−</button><output id="zoom" aria-live="polite">100%</output><button id="zoomIn" aria-label="Aumenta zoom">+</button><button id="zoomFit" class="quiet">Adatta larghezza</button></div>
+        <div class="reading-notes">
+          <button id="geometryBadge" class="geometry-badge" hidden>0 aree da completare</button>
+          <details id="reviewDetails" class="notes-popover">
+            <summary id="warningSummary">Note di lettura</summary>
+            <div class="notes-content">
+              <p class="hint">Promemoria sulla lettura automatica e sul controllo clinico, non un elenco di errori. La conferma dell’intero documento include queste note.</p>
+              <div id="warnings"></div>
+              <div id="exceptions"></div>
+              <label id="candidateLabel" hidden>Collega il prossimo rettangolo a <select id="candidate"><option value="">Nessun candidato</option></select></label>
+              <p class="hint">Solo le aree senza geometria richiedono un rettangolo manuale collegato.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <p id="toolHint" class="hint">Clicca un’oscurazione per ripristinare la leggibilità. Clicca una parola per oscurarla. Con zoom attivo, trascina per scorrere.</p>
+      <div id="previewRecovery" class="preview-recovery" hidden><p id="previewErrorMessage"></p><button id="retryPreview" class="quiet">Riprova anteprima</button><button id="repeatAnalysis" class="quiet">Ripeti analisi</button></div>
+      <div id="comparison" class="comparison">
+        <section class="review-group original-group" aria-label="Documento e testo originali">
+          <section class="document-panel"><h2>Originale <span>sola lettura</span></h2><div class="viewport"><div class="imageframe" id="originalFrame"><img id="original" alt="Pagina originale"><svg id="overlay" aria-label="Aree dell’originale" tabindex="0"></svg></div></div></section>
+          <section class="inline-text-panel">
+            <h2>Testo originale</h2>
+            <div id="textOriginal" class="geometric-text" tabindex="0" role="document" aria-label="Testo originale della pagina"><div class="text-lines"></div></div>
+            <div class="text-actions"><button id="copyOriginal" class="quiet">Copia originale</button><button id="downloadOriginal" class="quiet">Scarica originale TXT</button></div>
+            <details class="text-help"><summary>Come leggere il testo</summary><p>Testo della pagina, in sola lettura. Ordine e tabelle possono differire dall’immagine. Contiene dati non oscurati.</p></details>
+          </section>
+        </section>
+        <section class="review-group" aria-label="Documento e testo oscurati">
+          <section class="document-panel"><h2>Copia oscurata <span id="previewStatus">anteprima</span></h2><div class="viewport"><div class="imageframe" id="redactedFrame"><img id="redacted" alt="Anteprima della copia oscurata"><svg id="redactedOverlay" aria-label="Aree della copia oscurata" tabindex="0"></svg></div></div></section>
+          <section class="inline-text-panel">
+            <h2>Testo oscurato</h2>
+            <div id="textRedacted" class="geometric-text" tabindex="0" role="document" aria-label="Testo oscurato della pagina"><div class="text-lines"></div></div>
+            <details class="text-help"><summary>Come leggere il testo</summary><p>Anteprima della pagina sincronizzata alle oscurazioni. [TESTO NON LOCALIZZATO] indica parti escluse perché senza geometria. PDF + testo esporta il documento e il testo completo insieme.</p></details>
+          </section>
+        </section>
+        <div id="masterScroll" class="master-scroll" tabindex="0" role="region" aria-label="Scorrimento comune di documenti e testi" title="Scorri agli estremi per passare alla pagina precedente o successiva"><div id="scrollExtent"></div></div>
+        <div id="horizontalPan" class="horizontal-pan" tabindex="0" role="region" aria-label="Scorrimento orizzontale comune delle immagini" hidden><div id="horizontalExtent"></div></div>
+      </div>
+      <section class="page-footer" aria-label="Navigazione del documento">
+        <nav class="page-navigation" aria-label="Navigazione pagine">
+          <button id="prevPage" class="quiet" aria-label="Pagina precedente"><svg class="icon icon-flip" aria-hidden="true"><use href="#icon-arrow"/></svg>Precedente</button>
+          <label class="visually-hidden" for="page">Pagina</label><select id="page"></select>
+          <button id="nextPage" class="quiet" aria-label="Pagina successiva">Successiva<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        </nav>
+      </section>
+      <section id="finalStep" class="export-card" aria-labelledby="finalTitle" hidden>
+        <div><p class="eyebrow">VERIFICA DEL DOCUMENTO</p><h2 id="finalTitle" tabindex="-1">Conferma e condividi</h2><label class="final-label"><input id="final" type="checkbox" aria-describedby="completionHelp">Confermo la verifica dell’intero documento</label><p id="completionHelp" class="action-help" role="status"></p><p class="fine-print">La conferma include oscurazioni, ripristini, note di lettura e leggibilità clinica. Ogni modifica la annulla. Il PDF esportato contiene solo immagini oscurate, senza testo originale nascosto.</p></div>
+        <div class="export-actions"><label for="format">Formato</label><select id="format"><option value="pdf">PDF oscurato</option><option value="zip">PDF + testo oscurato (.zip)</option><option value="png">PNG · una pagina</option></select><button id="export" class="primary" aria-describedby="completionHelp" disabled><svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>Esporta copia oscurata</button><button id="copyRedacted" class="quiet" aria-describedby="copyActionHelp" disabled>Copia testo oscurato completo</button><span id="copyActionHelp" class="visually-hidden"></span></div>
+      </section>
+    </section>
+    <details id="settings" class="drawer settings"><summary>Impostazioni e stato dei servizi</summary><p id="health">Verifica dei servizi…</p><label>Qualità PDF <select id="dpi"><option>300</option><option>200</option><option>144</option><option>72</option></select> DPI</label><p class="hint">Anteprime fino a 1800 px. L’esportazione conserva la risoluzione scelta.</p><p id="timings"></p></details>
+  </main>
+  <footer><p><span id="executionFooter">Elaborazione documenti</span> · La rilevazione automatica può omettere dati o proporre oscuramenti errati. Verifica sempre la copia.</p><p class="hero-credit">Anonymizer · © 2026 Gianluca Braccini · Uso esclusivamente personale</p></footer>
+</body>
+</html>

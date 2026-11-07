@@ -1,0 +1,416 @@
+{
+  "fixture_type": "synthetic_layout_detection_contract",
+  "cases": [
+    {
+      "id": "paired_fields_same_row",
+      "source_id": "synthetic-source-pair-a",
+      "pages": [
+        {
+          "text": "Cognome: Virellano   Nome: Quindra\nAlbumina 4.2 g/dL",
+          "regions": [
+            {
+              "text": "Cognome:",
+              "box": [
+                10,
+                10,
+                62,
+                20
+              ]
+            },
+            {
+              "text": "Virellano",
+              "box": [
+                70,
+                10,
+                130,
+                20
+              ]
+            },
+            {
+              "text": "Nome:",
+              "box": [
+                180,
+                10,
+                220,
+                20
+              ]
+            },
+            {
+              "text": "Quindra",
+              "box": [
+                228,
+                10,
+                278,
+                20
+              ]
+            },
+            {
+              "text": "Albumina 4.2 g/dL",
+              "box": [
+                10,
+                34,
+                150,
+                44
+              ]
+            }
+          ],
+          "expected_values": [
+            {
+              "text": "Virellano",
+              "kind": "PERSON"
+            },
+            {
+              "text": "Quindra",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Albumina 4.2 g/dL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paired_fields_reversed_order",
+      "source_id": "synthetic-source-pair-b",
+      "pages": [
+        {
+          "text": "Nome: Marvelli   Cognome: Qindaro\nUrea 31 mg/dL",
+          "regions": [
+            {
+              "text": "Nome:",
+              "box": [
+                10,
+                10,
+                50,
+                20
+              ]
+            },
+            {
+              "text": "Marvelli",
+              "box": [
+                58,
+                10,
+                108,
+                20
+              ]
+            },
+            {
+              "text": "Cognome:",
+              "box": [
+                150,
+                10,
+                202,
+                20
+              ]
+            },
+            {
+              "text": "Qindaro",
+              "box": [
+                210,
+                10,
+                260,
+                20
+              ]
+            },
+            {
+              "text": "Urea 31 mg/dL",
+              "box": [
+                10,
+                34,
+                120,
+                44
+              ]
+            }
+          ],
+          "expected_values": [
+            {
+              "text": "Marvelli",
+              "kind": "PERSON"
+            },
+            {
+              "text": "Qindaro",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Urea 31 mg/dL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical_signature_initial",
+      "source_id": "synthetic-source-signature",
+      "pages": [
+        {
+          "text": "Firma del medico\nDott.ssa R. Vellari\nHb 12 g/dL",
+          "regions": [
+            {
+              "text": "Firma del medico",
+              "box": [
+                10,
+                10,
+                125,
+                20
+              ]
+            },
+            {
+              "text": "Dott.ssa R. Vellari",
+              "box": [
+                10,
+                23,
+                130,
+                33
+              ]
+            },
+            {
+              "text": "Hb 12 g/dL",
+              "box": [
+                10,
+                46,
+                90,
+                56
+              ]
+            }
+          ],
+          "expected_values": [
+            {
+              "text": "R. Vellari",
+              "kind": "DOCTOR"
+            }
+          ],
+          "preserve": [
+            "Hb 12 g/dL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "full_name_repeat_same_source",
+      "source_id": "synthetic-source-repeat",
+      "pages": [
+        {
+          "text": "Cognome e nome: Selene Vortani\nProteina 6.8 g/dL",
+          "regions": [],
+          "expected_values": [
+            {
+              "text": "Selene Vortani",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Proteina 6.8 g/dL"
+          ]
+        },
+        {
+          "text": "Selene Vortani\nGlicemia 91 mg/dL",
+          "regions": [],
+          "expected_values": [
+            {
+              "text": "Selene Vortani",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Glicemia 91 mg/dL"
+          ]
+        },
+        {
+          "text": "Vortani\nCreatinina 0.8 mg/dL",
+          "regions": [],
+          "forbidden_values": [
+            {
+              "text": "Vortani",
+              "kind": "PERSON",
+              "origin_prefix": "context:person_repeat"
+            }
+          ],
+          "preserve": [
+            "Creatinina 0.8 mg/dL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeat_not_cross_source",
+      "source_id": "synthetic-source-repeat-two",
+      "pages": [
+        {
+          "source_id": "synthetic-source-repeat-one",
+          "text": "Cognome e nome: Selene Vortani\nSodio 140 mmol/L",
+          "regions": [],
+          "expected_values": [
+            {
+              "text": "Selene Vortani",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Sodio 140 mmol/L"
+          ]
+        },
+        {
+          "source_id": "synthetic-source-repeat-two",
+          "text": "Selene Vortani\nSodio 140 mmol/L",
+          "regions": [],
+          "forbidden_values": [
+            {
+              "text": "Selene Vortani",
+              "kind": "PERSON",
+              "origin_prefix": "context:person_repeat"
+            }
+          ],
+          "preserve": [
+            "Sodio 140 mmol/L"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "initials_do_not_seed_full_name_repetition",
+      "source_id": "synthetic-source-initials",
+      "pages": [
+        {
+          "text": "Dott.ssa R. Vellari\nSodio 140 mmol/L",
+          "regions": [],
+          "expected_values": [
+            {
+              "text": "R. Vellari",
+              "kind": "DOCTOR"
+            }
+          ],
+          "preserve": [
+            "Sodio 140 mmol/L"
+          ]
+        },
+        {
+          "text": "R. Vellari\nPotassio 4.1 mmol/L",
+          "regions": [],
+          "forbidden_values": [
+            {
+              "text": "R. Vellari",
+              "kind": "DOCTOR",
+              "origin_prefix": "context:person_repeat"
+            }
+          ],
+          "preserve": [
+            "Potassio 4.1 mmol/L"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical_labels_are_not_names",
+      "source_id": "synthetic-source-negative",
+      "pages": [
+        {
+          "text": "Cognome: Albumina\nNome: Creatinina\nFirma medico 12/06/2026\nAlbumina 4.2 g/dL",
+          "regions": [
+            {
+              "text": "Cognome:",
+              "box": [
+                10,
+                10,
+                62,
+                20
+              ]
+            },
+            {
+              "text": "Albumina",
+              "box": [
+                70,
+                10,
+                125,
+                20
+              ]
+            },
+            {
+              "text": "Nome:",
+              "box": [
+                10,
+                34,
+                50,
+                44
+              ]
+            },
+            {
+              "text": "Creatinina",
+              "box": [
+                58,
+                34,
+                125,
+                44
+              ]
+            },
+            {
+              "text": "Firma medico 12/06/2026",
+              "box": [
+                10,
+                58,
+                185,
+                68
+              ]
+            },
+            {
+              "text": "Albumina 4.2 g/dL",
+              "box": [
+                10,
+                82,
+                150,
+                92
+              ]
+            }
+          ],
+          "forbidden_values": [
+            {
+              "text": "Albumina",
+              "kind": "PERSON",
+              "origin_prefix": "layout:"
+            },
+            {
+              "text": "Creatinina",
+              "kind": "PERSON",
+              "origin_prefix": "layout:"
+            },
+            {
+              "text": "12/06/2026",
+              "kind": "DOCTOR",
+              "origin_prefix": "context:"
+            }
+          ],
+          "preserve": [
+            "Albumina 4.2 g/dL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "similar_fullnames_not_fused",
+      "source_id": "synthetic-source-similar",
+      "pages": [
+        {
+          "text": "Cognome e nome: Selene Vortani\nSelene Vortan?\nGlucosio 88 mg/dL",
+          "regions": [],
+          "expected_values": [
+            {
+              "text": "Selene Vortani",
+              "kind": "PERSON"
+            }
+          ],
+          "preserve": [
+            "Selene Vortan?",
+            "Glucosio 88 mg/dL"
+          ],
+          "forbidden_values": [
+            {
+              "text": "Selene Vortan?",
+              "kind": "PERSON",
+              "origin_prefix": "context:person_repeat"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

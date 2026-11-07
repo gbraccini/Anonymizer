@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "provenance": "authored synthetic; invented names and facilities",
+  "docs": [
+    {
+      "id": "development-00",
+      "split": "development",
+      "text": "Morbo di Parkinson escluso; test di Romberg negativo. Forte dolore alla testa, grasso sottocutaneo regolare. Non febbre.",
+      "entities": [],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 120
+        }
+      ]
+    },
+    {
+      "id": "development-01",
+      "split": "development",
+      "text": "OCT: retina aderente, 246 µm; nessun edema. Pressione 14 mmHg. La terapia resta invariata, 5 mg al giorno.",
+      "entities": [],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 106
+        }
+      ]
+    },
+    {
+      "id": "development-02",
+      "split": "development",
+      "text": "Visita di Zoë Évora presso Clinica delle Lanterne. Non presenta diplopia.",
+      "entities": [
+        {
+          "start": 10,
+          "end": 19,
+          "kind": "PERSON"
+        },
+        {
+          "start": 27,
+          "end": 49,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 51,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "id": "development-03",
+      "split": "development",
+      "text": "Da Valleverde arriva Elvio Neranti: forte dolore al ginocchio, VAS 7/10.",
+      "entities": [
+        {
+          "start": 3,
+          "end": 13,
+          "kind": "LOCATION"
+        },
+        {
+          "start": 21,
+          "end": 34,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 36,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "id": "development-04",
+      "split": "development",
+      "text": "Łukasz Żur — morbo di Parkinson in terapia; nessuna caduta.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 10,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 13,
+          "end": 59
+        }
+      ]
+    },
+    {
+      "id": "development-05",
+      "split": "development",
+      "text": "Controllo OCT: Amélie Duvant. Spessore maculare 240 µm, retina aderente.",
+      "entities": [
+        {
+          "start": 15,
+          "end": 28,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 30,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "id": "development-06",
+      "split": "development",
+      "text": "Il medico Kenji Morisaki lavora al Centro Oculistico del Glicine. Pressione 16 mmHg.",
+      "entities": [
+        {
+          "start": 10,
+          "end": 24,
+          "kind": "PERSON"
+        },
+        {
+          "start": 35,
+          "end": 64,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 66,
+          "end": 84
+        }
+      ]
+    },
+    {
+      "id": "development-07",
+      "split": "development",
+      "text": "Inés Valmora e Nadir Solventi riferiscono assenza di febbre.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 12,
+          "kind": "PERSON"
+        },
+        {
+          "start": 15,
+          "end": 29,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 42,
+          "end": 60
+        }
+      ]
+    },
+    {
+      "id": "development-08",
+      "split": "development",
+      "text": "Sede di invio Roccalume; assistita Astrid Vellner. Test di Romberg negativo.",
+      "entities": [
+        {
+          "start": 14,
+          "end": 23,
+          "kind": "LOCATION"
+        },
+        {
+          "start": 35,
+          "end": 49,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 51,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "id": "development-09",
+      "split": "development",
+      "text": "La testa è dolente, grasso sottocutaneo conservato. Firmato Bruno Ellanti.",
+      "entities": [
+        {
+          "start": 60,
+          "end": 73,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "id": "development-10",
+      "split": "development",
+      "text": "Ricovero Ospedale delle Comete, Maëlle Orvani. FC 72 bpm e SpO2 98%.",
+      "entities": [
+        {
+          "start": 9,
+          "end": 30,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 32,
+          "end": 45,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 47,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "id": "development-11",
+      "split": "development",
+      "text": "Yusuf Dalmiri residente in Borgofiore. Non evidenza di edema.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 13,
+          "kind": "PERSON"
+        },
+        {
+          "start": 27,
+          "end": 37,
+          "kind": "LOCATION"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 39,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "id": "development-12",
+      "split": "development",
+      "text": "Consulente Petra Černova: malattia di Alzheimer, quadro stabile.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 24,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 26,
+          "end": 64
+        }
+      ]
+    },
+    {
+      "id": "development-13",
+      "split": "development",
+      "text": "Trasferire Omar Zefrani alla Casa di Cura del Melograno. Cammino autonomo.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 23,
+          "kind": "PERSON"
+        },
+        {
+          "start": 29,
+          "end": 55,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 57,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "id": "development-14",
+      "split": "development",
+      "text": "Rachide senza lesioni focali. Refertante: Hélène Farcetti.",
+      "entities": [
+        {
+          "start": 42,
+          "end": 57,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "development-15",
+      "split": "development",
+      "text": "Santiago Velmori [Montebrina] — Glicemia 89 mg/dL.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 16,
+          "kind": "PERSON"
+        },
+        {
+          "start": 18,
+          "end": 28,
+          "kind": "LOCATION"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 32,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "id": "development-16",
+      "split": "development",
+      "text": "Ambulatorio delle Felci riceve Daria Quersoli. Nessuna allergia dichiarata.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 23,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 31,
+          "end": 45,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 47,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "id": "development-17",
+      "split": "development",
+      "text": "Prenotazione per Mihai Călinescu; testa e collo senza adenopatie.",
+      "entities": [
+        {
+          "start": 17,
+          "end": 32,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 34,
+          "end": 65
+        }
+      ]
+    },
+    {
+      "id": "development-18",
+      "split": "development",
+      "text": "Relazione di Leila Benrali, valutata da Erik Nordanti. Riflessi presenti e simmetrici.",
+      "entities": [
+        {
+          "start": 13,
+          "end": 26,
+          "kind": "PERSON"
+        },
+        {
+          "start": 40,
+          "end": 53,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 55,
+          "end": 86
+        }
+      ]
+    },
+    {
+      "id": "development-19",
+      "split": "development",
+      "text": "OCT: nessun liquido sottoretinico. Destinazione Istituto Visivo delle Querce.",
+      "entities": [
+        {
+          "start": 48,
+          "end": 76,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "id": "development-20",
+      "split": "development",
+      "text": "Controllo programmato tra 6 mesi; terapia invariata. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Rilevazione clinica stabile. Utente Camila Viorenti.",
+      "entities": [
+        {
+          "start": 5280,
+          "end": 5295,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 52
+        }
+      ]
+    },
+    {
+      "id": "development-21",
+      "split": "development",
+      "text": "Nessun dolore toracico. parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro parametro Renée Alvorni valutata a Pianaluna.",
+      "entities": [
+        {
+          "start": 2484,
+          "end": 2497,
+          "kind": "PERSON"
+        },
+        {
+          "start": 2509,
+          "end": 2518,
+          "kind": "LOCATION"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "evaluation-00",
+      "split": "evaluation",
+      "text": "La diagnosi differenziale non sostiene Alzheimer. Non deficit di forza; Romberg nei limiti, assenza di vertigini.",
+      "entities": [],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 113
+        }
+      ]
+    },
+    {
+      "id": "evaluation-01",
+      "split": "evaluation",
+      "text": "Esame della testa senza lesioni. Grasso periviscerale conservato; glicemia 92 mg/dL, SpO2 99%, non assume farmaci.",
+      "entities": [],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 114
+        }
+      ]
+    },
+    {
+      "id": "evaluation-02",
+      "split": "evaluation",
+      "text": "Scheda ambulatoriale\nIntestataria: Ágata Mirens\nRima articolare conservata.",
+      "entities": [
+        {
+          "start": 35,
+          "end": 47,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 48,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "id": "evaluation-03",
+      "split": "evaluation",
+      "text": "Alla cortese attenzione del Poliambulatorio delle Vele: Teodor Istrate. Non si rilevano fratture.",
+      "entities": [
+        {
+          "start": 28,
+          "end": 54,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 56,
+          "end": 70,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 72,
+          "end": 97
+        }
+      ]
+    },
+    {
+      "id": "evaluation-04",
+      "split": "evaluation",
+      "text": "Accompagnatore Samir Kelvani; paziente Élodie Courvane. Nega vertigini.",
+      "entities": [
+        {
+          "start": 15,
+          "end": 28,
+          "kind": "PERSON"
+        },
+        {
+          "start": 39,
+          "end": 54,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 56,
+          "end": 71
+        }
+      ]
+    },
+    {
+      "id": "evaluation-05",
+      "split": "evaluation",
+      "text": "Esame eseguito a Collevento per Akiko Hanasori. Macula asciutta, 253 µm.",
+      "entities": [
+        {
+          "start": 17,
+          "end": 27,
+          "kind": "LOCATION"
+        },
+        {
+          "start": 32,
+          "end": 46,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 48,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "id": "evaluation-06",
+      "split": "evaluation",
+      "text": "Sospetto morbo di Parkinson escluso. Interprete: Viktor Želani.",
+      "entities": [
+        {
+          "start": 49,
+          "end": 62,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "id": "evaluation-07",
+      "split": "evaluation",
+      "text": "Unità Diagnostica del Corallo / Alma Fiorvelli / FE 62%, ritmo sinusale.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 29,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 32,
+          "end": 46,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 49,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "id": "evaluation-08",
+      "split": "evaluation",
+      "text": "Per conoscenza Sofía Armenti, Fontesole. Forte dolore riferito alla testa.",
+      "entities": [
+        {
+          "start": 15,
+          "end": 28,
+          "kind": "PERSON"
+        },
+        {
+          "start": 30,
+          "end": 39,
+          "kind": "LOCATION"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 41,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "id": "evaluation-09",
+      "split": "evaluation",
+      "text": "Referto consegnato da Józef Branecki. Test di Romberg non patologico.",
+      "entities": [
+        {
+          "start": 22,
+          "end": 36,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 38,
+          "end": 69
+        }
+      ]
+    },
+    {
+      "id": "evaluation-10",
+      "split": "evaluation",
+      "text": "Viene dimessa Nur Alevanti dal Presidio Sanitario del Cedro. Apiretica da 48 ore.",
+      "entities": [
+        {
+          "start": 14,
+          "end": 26,
+          "kind": "PERSON"
+        },
+        {
+          "start": 31,
+          "end": 59,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 61,
+          "end": 81
+        }
+      ]
+    },
+    {
+      "id": "evaluation-11",
+      "split": "evaluation",
+      "text": "Il grasso periviscerale non appare aumentato. Responsabile Gaël Vernot.",
+      "entities": [
+        {
+          "start": 59,
+          "end": 70,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "id": "evaluation-12",
+      "split": "evaluation",
+      "text": "In attesa a Lagogemma: Milena Dravska. Dolore 2/10; nessuna nausea.",
+      "entities": [
+        {
+          "start": 12,
+          "end": 21,
+          "kind": "LOCATION"
+        },
+        {
+          "start": 23,
+          "end": 37,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 39,
+          "end": 67
+        }
+      ]
+    },
+    {
+      "id": "evaluation-13",
+      "split": "evaluation",
+      "text": "Registrazione firmata Idris Malvani. Alzheimer familiare non documentato.",
+      "entities": [
+        {
+          "start": 22,
+          "end": 35,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 37,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "id": "evaluation-14",
+      "split": "evaluation",
+      "text": "Laboratorio: Centro Analisi delle Dune. Richiedente Chiara Zelvetti. Hb 13,4 g/dL.",
+      "entities": [
+        {
+          "start": 13,
+          "end": 38,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 52,
+          "end": 67,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 69,
+          "end": 82
+        }
+      ]
+    },
+    {
+      "id": "evaluation-15",
+      "split": "evaluation",
+      "text": "Étienne Rovard invia a Luz Soriani il controllo. Nessun sanguinamento.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 14,
+          "kind": "PERSON"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 49,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "id": "evaluation-16",
+      "split": "evaluation",
+      "text": "Località Pratovetro; pratica di Elena Kovařík. Rene destro regolare.",
+      "entities": [
+        {
+          "start": 9,
+          "end": 19,
+          "kind": "LOCATION"
+        },
+        {
+          "start": 32,
+          "end": 45,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 47,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "id": "evaluation-17",
+      "split": "evaluation",
+      "text": "Il Servizio Retina dei Salici comunica: Arun Devmori, papilla rosea senza edema.",
+      "entities": [
+        {
+          "start": 3,
+          "end": 29,
+          "kind": "FACILITY"
+        },
+        {
+          "start": 40,
+          "end": 52,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 54,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "id": "evaluation-18",
+      "split": "evaluation",
+      "text": "La dose resta 5 mg una volta al giorno. Assistito: Olivia Marvaux 😀.",
+      "entities": [
+        {
+          "start": 51,
+          "end": 65,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "id": "evaluation-19",
+      "split": "evaluation",
+      "text": "Comunicazione a Hugo Castellori presso Studio Medico della Rugiada: nessun deficit motorio.",
+      "entities": [
+        {
+          "start": 16,
+          "end": 31,
+          "kind": "PERSON"
+        },
+        {
+          "start": 39,
+          "end": 66,
+          "kind": "FACILITY"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 68,
+          "end": 91
+        }
+      ]
+    },
+    {
+      "id": "evaluation-20",
+      "split": "evaluation",
+      "text": "Decorso senza complicanze; controllo a dodici mesi. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Esame obiettivo nella norma. Conclusioni a cura di Frida Södervik.",
+      "entities": [
+        {
+          "start": 5584,
+          "end": 5598,
+          "kind": "PERSON"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "id": "evaluation-21",
+      "split": "evaluation",
+      "text": "Non assume anticoagulanti. osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione osservazione André Talvori — domicilio Rivachiara.",
+      "entities": [
+        {
+          "start": 3238,
+          "end": 3251,
+          "kind": "PERSON"
+        },
+        {
+          "start": 3264,
+          "end": 3274,
+          "kind": "LOCATION"
+        }
+      ],
+      "clinical_segments": [
+        {
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}

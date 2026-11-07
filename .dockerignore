@@ -1,0 +1,13 @@
+**
+!.dockerignore
+!pyproject.toml
+!src/
+!src/anonymizer/
+!src/anonymizer/**
+src/anonymizer/**/__pycache__/
+src/anonymizer/**/*.pyc
+!tools/
+!tools/deploy/
+!tools/deploy/Dockerfile
+!tools/deploy/constraints.trial.txt
+!tools/deploy/healthcheck.py
